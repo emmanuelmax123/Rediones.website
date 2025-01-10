@@ -1,23 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
     <title>Rediones</title>
-</head>
-<body class="bg-[#1D242D] p-[86px]">
-   <!-- nav start here -->
-    <nav class="h-[140px] flex items-center justify-between ">
-        <img src="assets/logo.png" alt="logo" class="h-[46px] w-[257px]">
-        <div class="flex items-center justify-between ">
-            <div>Home</div>
-            <div>About</div>
-            <div>Features</div>
-            <div>FAQs</div>
-            <div>Contact us</div>
-        </div>
-        <button class="h-[52px] w-[269px] px-[42px] py-[14px] border-black border-2 flex flex-row items-center justify-around"><div class="border-white border-2">Join the Waitlist</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path></svg></button>
+  </head>
+  <body class="bg-[#090B0E] text-white">
+    <!-- nav start here -->
+    <nav
+      class="h-[80px] flex items-center justify-between px-[120px] mb-[100px]"
+    >
+      <!-- rediones logo -->
+      <a href="index.html"
+        ><img src="../assets/logo.png" alt="logo" class="h-[33px]"
+      /></a>
+      <ul class="flex items-center justify-between gap-8 h-[46px]">
+        <!-- home section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
+          onclick="click()"
+        >
+          <a href="" class="p-2">Home</a>
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-100"
+          ></span>
+        </li>
+        <!-- feature section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
+          onclick="click()"
+        >
+          <a href="" class="p-2">Feature</a>
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
+          ></span>
+        </li>
+        <!-- Join section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
+          onclick="click()"
+        >
+          <a href="" class="p-2">Join</a>
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
+          ></span>
+        </li>
+        <!-- FAQs section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
+          onclick="click()"
+        >
+          <a href="" class="p-2">FAQs</a>
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
+          ></span>
+        </li>
+        <!-- Contact Us section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
+          onclick="click()"
+        >
+          <a href="" class="p-2">Contact Us</a>
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
+          ></span>
+        </li>
+      </ul>
+      <button
+        class="bg-[#D94A4A] h-12 px-7 py-3 flex items-center justify-between rounded-full"
+      >
+        <h4 class="">Download Beta</h4>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="rgba(255,255,255,1)"
+        >
+          <path
+            d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+          ></path>
+        </svg>
+      </button>
     </nav>
-</body>
+
+    <!-- rediones into -->
+    <div
+      class="flex items-center justify-around mb-[206px] ml-[102px] mr-[101px] gap-[74px]"
+    >
+      <!-- main text -->
+      <div class="w-[600px] h-[392px] flex flex-col gap-[33.5px]">
+        <h1 class="mainfont">
+          Welcome to Rediones Connect. Collaborate. Thrive.
+        </h1>
+        <h3>
+          Rediones is a social platform designed to connect scholars worldwide.
+          Connect, Collaborate, and Learn with Scholars from Around the World
+        </h3>
+        <button class="main-btn">Download Beta</button>
+      </div>
+      <!-- image holder -->
+      <div
+        class="bg-mainColor-0 rounded-tl-[100px] rounded-tr-[100px] h-[470px] w-[480px] relative overflow-hidden p-[51px] flex items-center justify-center"
+      >
+        <img
+          src="../assets/Mockup.png"
+          alt=""
+          class="absolute mt-32 w-[388.4px]"
+        />
+      </div>
+    </div>
+
+    <!-- feature section starts here -->
+    <section class="flex flex-col px-[177px] items-center">
+      <h1 class="h1mini">Explore Some Of Our Features</h1>
+      <h3>
+        We offer a variety of features that cater to the needs and interests of
+        scholars
+      </h3>
+      <div
+        class="grid grid-cols-3 h-[843.51px] text-black gap-[21.97px] mt-[141px]"
+      >
+        <!-- no1 -->
+        <div class="h-[503.74px] card group">
+          <div class="mx-[24px] mt-[24px]">
+            <h2>Create Project</h2>
+            <h4>
+              Collaborate with peers on impactful projects, sharing knowledge
+              and advancing your knowledge.
+            </h4>
+          </div>
+          <img src="../assets/mask (1).png" alt="" class="cardimg mt-2" />
+        </div>
+        <!-- no2 -->
+        <div class="h-[503.74px] card group">
+          <img src="../assets/CP.png" alt="" class="cardimg" />
+          <div class="mx-[24px] mt-[24px]">
+            <h2>Create Project</h2>
+            <h4>
+              Collaborate with peers on impactful projects, sharing knowledge
+              and advancing your knowledge.
+            </h4>
+          </div>
+        </div>
+        <!-- no3 -->
+        <div class="h-[503.74px] card group flex flex-col items-center">
+          <div class="mx-[24px] mt-[24px]">
+            <h2>Create Project</h2>
+            <h4>
+              Collaborate with peers on impactful projects, sharing knowledge
+              and advancing your knowledge.
+            </h4>
+          </div>
+          <img src="../assets/events.png" alt="" class="cardimg mt-4" />
+        </div>
+        <!-- no4 -->
+        <div class="col-span-2 h-[316.3px] relative card">
+          <img
+            src="../assets/spotlight.png"
+            alt=""
+            class="cardimg absolute z-0 translate-x-48"
+          />
+          <div class="mx-[24px] mb-[24px] bottom-0 absolute z-10 w-[530px]">
+            <h2>Create Project</h2>
+            <h4>
+              Collaborate with peers on impactful projects, sharing knowledge
+              and advancing your knowledge.
+            </h4>
+          </div>
+        </div>
+        <!-- no5 -->
+        <div class="h-[316.3px] card">5</div>
+      </div>
+    </section>
+  </body>
+  <script src="scripts.js"></script>
 </html>

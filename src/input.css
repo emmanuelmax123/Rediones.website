@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Nunito", serif;
+  }
+  h1 {
+    @apply text-[54px] font-mainfont font-bold;
+  }
+  h2 {
+    @apply text-[26px] mb-[14px] font-mainfont font-bold;
+  }
+  h3 {
+    @apply text-[20px];
+  }
+  h4 {
+    @apply text-[16px];
+  }
+}
+@layer utilities {
+  .main-btn {
+    @apply bg-mainColor-0 rounded-[20px] h-[43.47px] w-[182px] py-[11.73px] px-[35.2px] font-secfont font-semibold text-[13.41px];
+  }
+  .card {
+    @apply rounded-[17.57px] bg-[#373737]  hover:bg-mainColor-0 text-white overflow-hidden  transition duration-500;
+  }
+  .cardimg {
+    @apply group-hover:scale-105 transition duration-500;
+  }
+  .h1mini {
+    @apply font-subfont;
+  }
+}
