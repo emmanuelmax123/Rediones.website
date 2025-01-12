@@ -129,7 +129,7 @@
         class="grid grid-cols-3 h-[843.51px] text-black gap-[21.97px] mt-[141px]"
       >
         <!-- no1 -->
-        <div class="h-[503.74px] card group">
+        <div class="col-span-1 h-[503.74px] card group">
           <div class="mx-[24px] mt-[24px]">
             <h2>Create Project</h2>
             <h4>
@@ -140,7 +140,7 @@
           <img src="../assets/mask (1).png" alt="" class="cardimg mt-2" />
         </div>
         <!-- no2 -->
-        <div class="h-[503.74px] card group">
+        <div class="col-span-1 h-[503.74px] card group">
           <img src="../assets/CP.png" alt="" class="cardimg" />
           <div class="mx-[24px] mt-[24px]">
             <h2>Create Project</h2>
@@ -151,7 +151,9 @@
           </div>
         </div>
         <!-- no3 -->
-        <div class="h-[503.74px] card group flex flex-col items-center">
+        <div
+          class="col-span-1 h-[503.74px] card group flex flex-col items-center"
+        >
           <div class="mx-[24px] mt-[24px]">
             <h2>Create Project</h2>
             <h4>
@@ -161,23 +163,40 @@
           </div>
           <img src="../assets/events.png" alt="" class="cardimg mt-4" />
         </div>
-        <!-- no4 -->
-        <div class="col-span-2 h-[316.3px] relative card">
-          <img
-            src="../assets/spotlight.png"
-            alt=""
-            class="cardimg absolute z-0 translate-x-48"
-          />
-          <div class="mx-[24px] mb-[24px] bottom-0 absolute z-10 w-[530px]">
-            <h2>Create Project</h2>
-            <h4>
-              Collaborate with peers on impactful projects, sharing knowledge
-              and advancing your knowledge.
-            </h4>
+        <div class="col-span-3 flex gap-[21.97px]">
+          <!-- no4 -->
+          <div class="flex-grow-[4.1] h-[316.3px] relative card group">
+            <img
+              src="../assets/spotlight.png"
+              alt=""
+              class="cardimg z-0 translate-x-48"
+            />
+            <div class="mx-[24px] mb-[24px] bottom-0 absolute z-10 w-[530px]">
+              <h2>Create Project</h2>
+              <h4>
+                Collaborate with peers on impactful projects, sharing knowledge
+                and advancing your knowledge.
+              </h4>
+            </div>
+          </div>
+
+          <!-- no5 -->
+          <div class="flex-grow-[2.9] h-[316.3px] card group">
+            <img
+              src="../assets/audioverse.png"
+              alt=""
+              class="cardimg z-0 translate-x-28"
+            />
+            <div class="mx-[24px] mb-[24px] top-10 absolute z-10 w-[325px]">
+              <h2>Listen with Audio-Verse</h2>
+              <h4>
+                Listen to the comment section as an audio stream, similar to a
+                podcast. You can convert text comments into an audio format
+                using text-to-speech technology
+              </h4>
+            </div>
           </div>
         </div>
-        <!-- no5 -->
-        <div class="h-[316.3px] card">5</div>
       </div>
     </section>
   </body>
