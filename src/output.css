@@ -648,6 +648,10 @@ h4 {
   margin-top: 42px;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -950,8 +954,8 @@ h4 {
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   font-family: Poppins, serif;
   font-weight: 600;
   --tw-text-opacity: 1;

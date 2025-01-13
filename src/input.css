@@ -33,6 +33,6 @@
     @apply font-subfont;
   }
   .sec-btn {
-    @apply text-[#D94A4A] bg-white h-12 px-6 flex items-center justify-between rounded-full mb-[24px] opacity-0 bottom-0 absolute group-hover:opacity-100 font-secfont font-semibold;
+    @apply text-[#D94A4A] bg-white h-12 px-5 flex items-center justify-between rounded-full mb-[24px] opacity-0 bottom-0 absolute group-hover:opacity-100 font-secfont font-semibold;
   }
 }
