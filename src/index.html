@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="output.css" />
     <title>Rediones</title>
   </head>
-  <body class="bg-[#090B0E] text-white">
+  <body class="bg-[#090B0E] text-white flex flex-col items-center min-h-screen">
     <!-- nav start here -->
     <nav
-      class="h-[80px] flex items-center justify-between px-[120px] mb-[100px]"
+      class="h-[80px] flex items-center justify-between mb-[100px] w-[1244px]"
     >
       <!-- rediones logo -->
       <a href="index.html"
@@ -74,7 +74,7 @@
         </li>
       </ul>
       <button
-        class="bg-[#D94A4A] h-12 px-7 py-3 flex items-center justify-between rounded-full"
+        class="bg-[#D94A4A] h-12 px-7 py-3 flex items-center justify-between rounded-[27px] font-secfont font-semibold"
       >
         <h4 class="">Download Beta</h4>
         <svg
@@ -92,11 +92,9 @@
     </nav>
 
     <!-- rediones into -->
-    <div
-      class="flex items-center justify-around mb-[206px] ml-[102px] mr-[101px] gap-[74px]"
-    >
+    <div class="flex items-center justify-between mb-[206px] w-[1244px]">
       <!-- main text -->
-      <div class="w-[600px] h-[392px] flex flex-col gap-[33.5px]">
+      <div class="w-[600px] flex flex-col gap-[33.5px]">
         <h1 class="mainfont">
           Welcome to Rediones Connect. Collaborate. Thrive.
         </h1>
@@ -119,7 +117,7 @@
     </div>
 
     <!-- feature section starts here -->
-    <section class="flex flex-col px-[177px] items-center">
+    <section class="flex flex-col items-center w-[1244px]">
       <h1 class="h1mini">Explore Some Of Our Features</h1>
       <h3>
         We offer a variety of features that cater to the needs and interests of
@@ -129,24 +127,32 @@
         class="grid grid-cols-3 h-[843.51px] text-black gap-[21.97px] mt-[141px]"
       >
         <!-- no1 -->
-        <div class="col-span-1 h-[503.74px] card group">
+        <div class="col-span-1 h-[503.74px] card group relative">
           <div class="mx-[24px] mt-[24px]">
             <h2>Create Project</h2>
             <h4>
               Collaborate with peers on impactful projects, sharing knowledge
-              and advancing your knowledge.
+              and broaden your network.
             </h4>
           </div>
-          <img src="../assets/mask (1).png" alt="" class="cardimg mt-2" />
+          <div class="flex flex-col items-center">
+            <img
+              src="../assets/mask (1).png"
+              alt=""
+              class="cardimg mt-2 translate-x-[14px]"
+            />
+          </div>
+
+          <button class="sec-btn translate-x-[24px]">Get the Beta</button>
         </div>
         <!-- no2 -->
         <div class="col-span-1 h-[503.74px] card group">
           <img src="../assets/CP.png" alt="" class="cardimg" />
           <div class="mx-[24px] mt-[24px]">
-            <h2>Create Project</h2>
+            <h2>Community Practice</h2>
             <h4>
-              Collaborate with peers on impactful projects, sharing knowledge
-              and advancing your knowledge.
+              No academic struggle is faced alone. This space encourages
+              collaboration so everyone can thrive.
             </h4>
           </div>
         </div>
@@ -155,10 +161,10 @@
           class="col-span-1 h-[503.74px] card group flex flex-col items-center"
         >
           <div class="mx-[24px] mt-[24px]">
-            <h2>Create Project</h2>
+            <h2>Events</h2>
             <h4>
-              Collaborate with peers on impactful projects, sharing knowledge
-              and advancing your knowledge.
+              Host workshops, talks, and performances, igniting the minds of
+              others with your passion and knowledge.
             </h4>
           </div>
           <img src="../assets/events.png" alt="" class="cardimg mt-4" />
@@ -172,29 +178,29 @@
               class="cardimg z-0 translate-x-48"
             />
             <div class="mx-[24px] mb-[24px] bottom-0 absolute z-10 w-[530px]">
-              <h2>Create Project</h2>
+              <h2>Showcase With Spotlight</h2>
               <h4>
-                Collaborate with peers on impactful projects, sharing knowledge
-                and advancing your knowledge.
+                Share your personal stories, experiences, vlogs, and tips to
+                inspire, entertain, and connect with the community!
               </h4>
             </div>
           </div>
 
           <!-- no5 -->
-          <div class="flex-grow-[2.9] h-[316.3px] card group">
+          <div class="flex-grow-[2.9] h-[316.3px] card group relative">
             <img
               src="../assets/audioverse.png"
               alt=""
               class="cardimg z-0 translate-x-28"
             />
-            <div class="mx-[24px] mb-[24px] top-10 absolute z-10 w-[325px]">
+            <div class="mx-[24px] mb-[24px] bottom-0 absolute z-10 w-[325px]">
               <h2>Listen with Audio-Verse</h2>
               <h4>
                 Listen to the comment section as an audio stream, similar to a
-                podcast. You can convert text comments into an audio format
-                using text-to-speech technology
+                podcast.
               </h4>
             </div>
+            <button class="sec-btn translate-x-[350px]">Get the Beta</button>
           </div>
         </div>
       </div>
