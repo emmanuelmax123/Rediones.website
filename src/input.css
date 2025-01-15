@@ -18,6 +18,9 @@
   h4 {
     @apply text-[16px];
   }
+  h5 {
+    @apply text-[18px] font-semibold font-subfont;
+  }
 }
 @layer utilities {
   .main-btn {
@@ -34,5 +37,8 @@
   }
   .sec-btn {
     @apply text-[#D94A4A] bg-white h-12 px-5 flex items-center justify-between rounded-full mb-[24px] opacity-0 bottom-0 absolute group-hover:opacity-100 font-secfont font-semibold;
+  }
+  .container {
+    @apply p-5;
   }
 }
