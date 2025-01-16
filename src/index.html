@@ -103,7 +103,7 @@
         <button class="main-btn">Join the waitlist</button>
       </div>
       <!-- image holder -->
-      <div
+      <!-- <div
         class="bg-mainColor-0 rounded-tl-[100px] rounded-tr-[100px] h-[470px] w-[480px] relative overflow-hidden p-[51px] flex items-center justify-center"
       >
         <img
@@ -111,7 +111,56 @@
           alt=""
           class="absolute mt-32 w-[388.4px]"
         />
+      </div> -->
+
+      // this needs work
+      <div class="flex justify-between gap-10 w-fit border-white">
+        <!-- col 1 -->
+        <div class="pt-40">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class=""
+            />
+          </div>
+        </div>
+        <!-- col 2 -->
+        <div class="pt-20 gap-4 flex flex-col">
+          <div class="">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class=""
+            />
+          </div>
+        </div>
+        <!-- col 3 -->
+        <div class="gap-4 flex flex-col">
+          <div class="w-64">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class=""
+            />
+          </div>
+        </div>
       </div>
+      //
     </section>
     <!-- feature section starts here -->
     <section class="flex flex-col items-center w-[1244px] mb-[140px]">
@@ -226,7 +275,9 @@
       </h2>
 
       <div class="flex items-center">
-        <button
+        <a
+          href="https://forms.gle/6PFMLmungjFTRps77"
+          aria-label="Sign up to become a Rediones ambassador by filling out this form"
           class="rounded-[27px] h-12 py-[14px] px-[42px] font-secfont font-semibold bg-white text-mainColor-0 text-[13.44px] group relative"
         >
           Become an Ambassador
@@ -235,7 +286,7 @@
           >
             For the Ones Ready to Lead the Future.
           </h3>
-        </button>
+        </a>
       </div>
     </section>
     <!-- FAQ Starts here -->
@@ -247,7 +298,7 @@
       <!-- questions -->
       <div class="mb-6 mt-10">
         <!-- question 1 starts here -->
-        <div class="p-5 questioncont border-[#414141] border-b-2 w-[1206px]">
+        <div class="faqsect questioncont">
           <div class="flex justify-between">
             <h5 class="text-mainColor-0">
               What makes Rediones different from other social media platforms?
@@ -288,7 +339,7 @@
           </div>
         </div>
         <!-- question 2 starts here -->
-        <div class="p-5 questioncont border-[#414141] border-b-2 w-[1206px]">
+        <div class="faqsect questioncont">
           <div class="flex justify-between">
             <h5 class="text-mainColor-0">
               What makes Rediones different from other social media platforms?
@@ -329,7 +380,7 @@
           </div>
         </div>
         <!-- question 3 starts here -->
-        <div class="p-5 questioncont border-[#414141] border-b-2 w-[1206px]">
+        <div class="faqsect questioncont">
           <div class="flex justify-between">
             <h5 class="text-mainColor-0">
               What makes Rediones different from other social media platforms?
@@ -370,7 +421,7 @@
           </div>
         </div>
         <!-- question 4 starts here -->
-        <div class="p-5 questioncont border-[#414141] border-b-2 w-[1206px]">
+        <div class="faqsect questioncont">
           <div class="flex justify-between">
             <h5 class="text-mainColor-0">
               What makes Rediones different from other social media platforms?
@@ -411,7 +462,7 @@
           </div>
         </div>
         <!-- question 5 starts here -->
-        <div class="p-5 questioncont border-[#414141] border-b-2 w-[1206px]">
+        <div class="faqsect questioncont">
           <div class="flex justify-between">
             <h5 class="text-mainColor-0">
               What makes Rediones different from other social media platforms?
@@ -441,7 +492,7 @@
               ></path>
             </svg>
           </div>
-          <div class="hidden answercont">
+          <div class="hidden answercont mt-2">
             <h5>
               Rediones goes beyond casual sharing. We focus on meaningful
               connections and academic growth. Whether you're seeking
@@ -457,6 +508,7 @@
       <!-- newsletter section -->
       <div
         class="flex justify-between items-center bg-[#1f1f1f] z-10 px-[103px] py-[60px] w-[1231px] -mt-24 rounded-[24px]"
+        style="box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25)"
       >
         <h3 class="font-mainfont text-[32px]">Subscribe Newsletters</h3>
         <div class="bg-white p-2 w-[605px] flex gap-4 rounded-[4px]">

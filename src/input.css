@@ -41,4 +41,7 @@
   .container {
     @apply p-5;
   }
+  .faqsect {
+    @apply p-5  border-[#414141] border-b-2 w-[1206px];
+  }
 }
