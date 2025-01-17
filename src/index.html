@@ -15,7 +15,8 @@
   <body class="bg-[#090B0E] text-white flex flex-col items-center min-h-screen">
     <!-- nav start here -->
     <nav
-      class="h-[80px] flex items-center justify-between mb-[100px] w-[1244px]"
+      class="h-[80px] flex items-center justify-between mb-[50px] w-full px-[120px] fixed z-50 top-0 bg-[#090B0E] transition-transform duration-300"
+      id="js-nav"
     >
       <!-- rediones logo -->
       <a href="index.html"
@@ -25,19 +26,18 @@
         <!-- home section sarts here -->
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
-          onclick="click()"
         >
-          <a href="" class="p-2">Home</a>
+          <a href="#home" class="p-2">Home</a>
           <span
-            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-100"
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
         </li>
+
         <!-- feature section sarts here -->
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
-          onclick="click()"
         >
-          <a href="" class="p-2">Feature</a>
+          <a href="#feature" class="p-2">Feature</a>
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -45,9 +45,8 @@
         <!-- Join section sarts here -->
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
-          onclick="click()"
         >
-          <a href="" class="p-2">Join</a>
+          <a href="#join" class="p-2">Join</a>
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -55,9 +54,8 @@
         <!-- FAQs section sarts here -->
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
-          onclick="click()"
         >
-          <a href="" class="p-2">FAQs</a>
+          <a href="#faq" class="p-2">FAQs</a>
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -65,9 +63,8 @@
         <!-- Contact Us section sarts here -->
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
-          onclick="click()"
         >
-          <a href="" class="p-2">Contact Us</a>
+          <a href="mailto:redionesofficial@gmail.com" class="p-2">Contact Us</a>
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -91,7 +88,10 @@
       </button>
     </nav>
     <!-- rediones into -->
-    <section class="flex items-center justify-between mb-[206px] w-[1244px]">
+    <section
+      class="flex items-center justify-between w-[1244px] mb-[50px] pt-[130px]"
+      id="home"
+    >
       <!-- main text -->
       <div class="w-[650px] flex flex-col gap-[33.5px]">
         <h1 class="mainfont">We're Redefining The Student Experience</h1>
@@ -102,412 +102,215 @@
         </h3>
         <button class="main-btn">Join the waitlist</button>
       </div>
-      <!-- image holder -->
-      <!-- <div
-        class="bg-mainColor-0 rounded-tl-[100px] rounded-tr-[100px] h-[470px] w-[480px] relative overflow-hidden p-[51px] flex items-center justify-center"
-      >
-        <img
-          src="../assets/Mockup.png"
-          alt=""
-          class="absolute mt-32 w-[388.4px]"
-        />
-      </div> -->
 
-      // this needs work
-      <div class="flex justify-between gap-10 w-fit border-white">
+      <!-- images goes here -->
+      <div class="flex justify-between gap-[30px] border-white w-fit">
         <!-- col 1 -->
-        <div class="pt-40">
-          <div>
+        <div class="pt-[140px]">
+          <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              src="../assets/kola.jpg"
               alt=""
-              class=""
+              class="object-cover w-full h-full grayscale hover:filter-none antialiased"
             />
           </div>
         </div>
         <!-- col 2 -->
-        <div class="pt-20 gap-4 flex flex-col">
-          <div class="">
+        <div class="pt-[70px] gap-[37px] flex flex-col">
+          <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              src="../assets/femi.jpg"
               alt=""
-              class=""
+              class="object-cover w-full h-full scale-150 translate-y-2 translate-x-6 grayscale hover:filter-none"
             />
           </div>
-          <div class="">
+          <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              src="../assets/joab2.jpg"
               alt=""
-              class=""
+              class="object-cover w-full h-full grayscale hover:filter-none translate-y-1"
             />
           </div>
         </div>
         <!-- col 3 -->
-        <div class="gap-4 flex flex-col">
-          <div class="w-64">
+        <div class="gap-[37px] flex flex-col">
+          <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
               src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
               alt=""
-              class=""
+              class="object-cover w-full h-full grayscale hover:filter-none"
             />
           </div>
-          <div>
+          <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
               src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
               alt=""
-              class=""
+              class="object-cover w-full h-full grayscale hover:filter-none"
             />
           </div>
         </div>
       </div>
-      //
     </section>
+
     <!-- feature section starts here -->
-    <section class="flex flex-col items-center w-[1244px] mb-[140px]">
-      <h1 class="h1mini mb-5">Explore Some Of Our Features</h1>
-      <h3>
-        We offer a variety of features that cater to the needs and interests of
-        scholars
-      </h3>
-      <div
-        class="grid grid-cols-3 h-[843.51px] text-black gap-[21.97px] mt-[141px]"
-      >
-        <!-- no1 -->
-        <div class="col-span-1 h-[503.74px] card group relative">
-          <div class="mx-[24px] mt-[24px]">
-            <h2>Create Project</h2>
-            <h4>
-              Collaborate with peers on impactful projects, sharing knowledge
-              and broaden your network.
-            </h4>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="../assets/mask (1).png"
-              alt=""
-              class="cardimg mt-2 translate-x-[14px]"
-            />
-          </div>
-
-          <button class="sec-btn translate-x-[24px]">Get the Beta</button>
-        </div>
-        <!-- no2 -->
-        <div class="col-span-1 h-[503.74px] card group">
-          <img src="../assets/CP.png" alt="" class="cardimg" />
-          <div class="mx-[24px] mt-[24px]">
-            <h2>Community Practice</h2>
-            <h4>
-              No academic struggle is faced alone. This space encourages
-              collaboration so everyone can thrive.
-            </h4>
-          </div>
-        </div>
-        <!-- no3 -->
+    <section class="navdivadjuster" id="feature">
+      <div class="flex flex-col items-center w-[1244px]">
+        <h1 class="h1mini mb-5">Explore Some Of Our Features</h1>
+        <h3>
+          We offer a variety of features that cater to the needs and interests
+          of scholars
+        </h3>
         <div
-          class="col-span-1 h-[503.74px] card group flex flex-col items-center"
+          class="grid grid-cols-3 h-[843.51px] text-black gap-[21.97px] mt-[100px]"
         >
-          <div class="mx-[24px] mt-[24px]">
-            <h2>Events</h2>
-            <h4>
-              Host workshops, talks, and performances, igniting the minds of
-              others with your passion and knowledge.
-            </h4>
-          </div>
-          <img src="../assets/events.png" alt="" class="cardimg mt-4" />
-        </div>
-        <div class="col-span-3 flex gap-[21.97px]">
-          <!-- no4 -->
-          <div class="flex-grow-[4.1] h-[316.3px] relative card group">
-            <img
-              src="../assets/spotlight.png"
-              alt=""
-              class="cardimg z-0 translate-x-48"
-            />
-            <div class="mx-[24px] mb-[24px] bottom-0 absolute z-10 w-[530px]">
-              <h2>Showcase With Spotlight</h2>
+          <!-- no1 -->
+          <div class="col-span-1 h-[503.74px] card group relative">
+            <div class="mx-[24px] mt-[24px]">
+              <h2>Create Project</h2>
               <h4>
-                Share your personal stories, experiences, vlogs, and tips to
-                inspire, entertain, and connect with the community!
+                Collaborate with peers on impactful projects, sharing knowledge
+                and broaden your network.
+              </h4>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                src="../assets/mask (1).png"
+                alt=""
+                class="cardimg mt-2 translate-x-[14px]"
+              />
+            </div>
+            <!-- button starts here -->
+            <a
+              class="sec-btn translate-x-[24px]"
+              href="https://www.figma.com/proto/OgYMxIMbRPjUaQtGyatSX6/Rediones?node-id=986-4179&t=kBJBN9mDakauUzLo-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=986%3A4179"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Preview Layout</a
+            >
+          </div>
+          <!-- no2 -->
+          <div class="col-span-1 h-[503.74px] card group">
+            <img src="../assets/CP.png" alt="" class="cardimg" />
+            <div class="mx-[24px] mt-[24px]">
+              <h2>Community Practice</h2>
+              <h4>
+                No academic struggle is faced alone. This space encourages
+                collaboration so everyone can thrive.
               </h4>
             </div>
           </div>
+          <!-- no3 -->
+          <div
+            class="col-span-1 h-[503.74px] card group flex flex-col items-center"
+          >
+            <div class="mx-[24px] mt-[24px]">
+              <h2>Events</h2>
+              <h4>
+                Host workshops, talks, and performances, igniting the minds of
+                others with your passion and knowledge.
+              </h4>
+            </div>
+            <img src="../assets/events.png" alt="" class="cardimg mt-4" />
+          </div>
+          <div class="col-span-3 flex gap-[21.97px]">
+            <!-- no4 -->
+            <div class="flex-grow-[4.1] h-[316.3px] relative card group">
+              <img
+                src="../assets/spotlight.png"
+                alt=""
+                class="cardimg z-0 translate-x-48"
+              />
+              <div class="mx-[24px] mb-[24px] bottom-0 absolute z-10 w-[530px]">
+                <h2>Showcase With Spotlight</h2>
+                <h4>
+                  Share your personal stories, experiences, vlogs, and tips to
+                  inspire, entertain, and connect with the community!
+                </h4>
+              </div>
+            </div>
 
-          <!-- no5 -->
-          <div class="flex-grow-[2.9] h-[316.3px] card group relative">
-            <img
-              src="../assets/audioverse.png"
-              alt=""
-              class="cardimg z-0 translate-x-28"
-            />
-            <div class="mx-[24px] mb-[24px] bottom-0 absolute z-10 w-[325px]">
-              <h2>Listen with Audio-Verse</h2>
-              <h4>
-                Listen to the comment section as an audio stream, similar to a
-                podcast.
-              </h4>
+            <!-- no5 -->
+            <div class="flex-grow-[2.9] h-[316.3px] card group relative">
+              <img
+                src="../assets/audioverse.png"
+                alt=""
+                class="cardimg z-0 translate-x-28"
+              />
+              <div class="ml-[24px] mb-[24px] bottom-0 absolute z-10 w-[320px]">
+                <h2>Listen with Audio-Verse</h2>
+                <h4>
+                  Listen to the comment section as an audio stream, similar to a
+                  podcast.
+                </h4>
+              </div>
+              <!-- button -->
+              <a
+                href="https://www.figma.com/proto/OgYMxIMbRPjUaQtGyatSX6/Rediones?node-id=986-4179&t=kBJBN9mDakauUzLo-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=986%3A4179"
+                class="sec-btn translate-x-[350px] inline-block text-center"
+                target="_blank"
+                rel=" noopener noreferrer"
+              >
+                Preview Layout
+              </a>
             </div>
-            <button class="sec-btn translate-x-[350px] ml-4">
-              Get the Beta
-            </button>
           </div>
         </div>
       </div>
     </section>
-    <!-- become an ambassador starts here -->
-    <section
-      class="w-[1244px] bg-cover bg-center h-[399px] px-[46px] pt-[57px] rounded-[20.16px] mb-[206px]"
-      style="
-        background-image: linear-gradient(
-            115deg,
-            rgba(221, 95, 95, 1) 0%,
-            rgba(221, 95, 95, 0) 45%
-          ),
-          url('../assets/CTA.jpg');
-        background-size: cover;
-        background-position: center;
-      "
-    >
-      <h1 class="w-[322px] text-[33px] mb-[25px]">
-        Become a Rediones Ambassador
-      </h1>
-      <h2 class="text-[20px] font-semibold w-[321px] mb-[75px]">
-        Champion Innovation and Build Connections with Rediones
-      </h2>
 
-      <div class="flex items-center">
-        <a
-          href="https://forms.gle/6PFMLmungjFTRps77"
-          aria-label="Sign up to become a Rediones ambassador by filling out this form"
-          class="rounded-[27px] h-12 py-[14px] px-[42px] font-secfont font-semibold bg-white text-mainColor-0 text-[13.44px] group relative"
-        >
-          Become an Ambassador
-          <h3
-            class="w-[550px] px-2 py-1 hidden group-hover:block group-hover:translate-x-[570px] bg-mainColor-0 text-white absolute top-0 left-0 transition-all duration-300 z-10"
+    <!-- become an ambassador starts here -->
+    <section class="navdivadjuster" id="join">
+      <div
+        class="w-[1244px] bg-cover bg-center h-[399px] px-[46px] rounded-[20.16px]"
+        style="
+          background-image: linear-gradient(
+              115deg,
+              rgba(221, 95, 95, 1) 0%,
+              rgba(221, 95, 95, 0) 45%
+            ),
+            url('../assets/CTA.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <h1 class="w-[322px] text-[33px] mb-[25px]">
+          Become a Rediones Ambassador
+        </h1>
+        <h2 class="text-[20px] font-semibold w-[321px] mb-[75px]">
+          Champion Innovation and Build Connections with Rediones
+        </h2>
+
+        <div class="flex items-center">
+          <a
+            href="https://forms.gle/6PFMLmungjFTRps77"
+            aria-label="Sign up to become a Rediones ambassador by filling out this form"
+            class="rounded-[27px] h-12 py-[14px] px-[42px] font-secfont font-semibold bg-white text-mainColor-0 text-[13.44px] group relative"
           >
-            For the Ones Ready to Lead the Future.
-          </h3>
-        </a>
+            Become an Ambassador
+            <h3
+              class="w-[550px] px-2 py-1 hidden group-hover:block group-hover:translate-x-[570px] bg-mainColor-0 text-white absolute top-0 left-0 transition-all duration-300 z-10"
+            >
+              For the Ones Ready to Lead the Future.
+            </h3>
+          </a>
+        </div>
       </div>
     </section>
     <!-- FAQ Starts here -->
-    <section class="flex flex-col items-center justify-center">
-      <h1 class="h1mini mb-5">
-        <span class="text-mainColor-0">Frequently</span> asked questions
-      </h1>
-      <h3>Everything you need to know about our platform</h3>
-      <!-- questions -->
-      <div class="mb-6 mt-10">
-        <!-- question 1 starts here -->
-        <div class="faqsect questioncont">
-          <div class="flex justify-between">
-            <h5 class="text-mainColor-0">
-              What makes Rediones different from other social media platforms?
-            </h5>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="opensign"
-            >
-              <path
-                d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
-              ></path>
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="hidden closesign"
-            >
-              <path
-                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="hidden answercont mt-2">
-            <h5>
-              Rediones goes beyond casual sharing. We focus on meaningful
-              connections and academic growth. Whether you're seeking
-              collaborators, sharing expertise, or getting support, Rediones
-              fosters a purposeful community where scholars like you can
-              flourish.
-            </h5>
-          </div>
-        </div>
-        <!-- question 2 starts here -->
-        <div class="faqsect questioncont">
-          <div class="flex justify-between">
-            <h5 class="text-mainColor-0">
-              What makes Rediones different from other social media platforms?
-            </h5>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="opensign"
-            >
-              <path
-                d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
-              ></path>
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="hidden closesign mt-2"
-            >
-              <path
-                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="hidden answercont">
-            <h5>
-              Rediones goes beyond casual sharing. We focus on meaningful
-              connections and academic growth. Whether you're seeking
-              collaborators, sharing expertise, or getting support, Rediones
-              fosters a purposeful community where scholars like you can
-              flourish.
-            </h5>
-          </div>
-        </div>
-        <!-- question 3 starts here -->
-        <div class="faqsect questioncont">
-          <div class="flex justify-between">
-            <h5 class="text-mainColor-0">
-              What makes Rediones different from other social media platforms?
-            </h5>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="opensign"
-            >
-              <path
-                d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
-              ></path>
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="hidden closesign mt-2"
-            >
-              <path
-                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="hidden answercont">
-            <h5>
-              Rediones goes beyond casual sharing. We focus on meaningful
-              connections and academic growth. Whether you're seeking
-              collaborators, sharing expertise, or getting support, Rediones
-              fosters a purposeful community where scholars like you can
-              flourish.
-            </h5>
-          </div>
-        </div>
-        <!-- question 4 starts here -->
-        <div class="faqsect questioncont">
-          <div class="flex justify-between">
-            <h5 class="text-mainColor-0">
-              What makes Rediones different from other social media platforms?
-            </h5>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="opensign"
-            >
-              <path
-                d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
-              ></path>
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="hidden closesign"
-            >
-              <path
-                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="hidden answercont mt-2">
-            <h5>
-              Rediones goes beyond casual sharing. We focus on meaningful
-              connections and academic growth. Whether you're seeking
-              collaborators, sharing expertise, or getting support, Rediones
-              fosters a purposeful community where scholars like you can
-              flourish.
-            </h5>
-          </div>
-        </div>
-        <!-- question 5 starts here -->
-        <div class="faqsect questioncont">
-          <div class="flex justify-between">
-            <h5 class="text-mainColor-0">
-              What makes Rediones different from other social media platforms?
-            </h5>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="opensign mt-2"
-            >
-              <path
-                d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
-              ></path>
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="rgba(217,74,74,1)"
-              class="hidden closesign"
-            >
-              <path
-                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="hidden answercont mt-2">
-            <h5>
-              Rediones goes beyond casual sharing. We focus on meaningful
-              connections and academic growth. Whether you're seeking
-              collaborators, sharing expertise, or getting support, Rediones
-              fosters a purposeful community where scholars like you can
-              flourish.
-            </h5>
-          </div>
-        </div>
+    <section class="navdivadjuster" id="faq">
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="h1mini mb-5">
+          <span class="text-mainColor-0">Frequently</span> asked questions
+        </h1>
+        <h3>Everything you need to know about our platform</h3>
+        <!-- questions -->
+        <div class="mb-6 mt-10 faq-cont"></div>
       </div>
     </section>
     <footer class="bg-[#0f0f0f] h-fit px-20 pb-9 mt-64 w-full">
       <!-- newsletter section -->
       <div
-        class="flex justify-between items-center bg-[#1f1f1f] z-10 px-[103px] py-[60px] w-[1231px] -mt-24 rounded-[24px]"
+        class="flex justify-between items-center bg-[#1f1f1f] z-10 px-[103px] py-[60px] -mt-24 rounded-[24px]"
         style="box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25)"
       >
         <h3 class="font-mainfont text-[32px]">Subscribe Newsletters</h3>
@@ -527,7 +330,7 @@
 
       <!-- main footer section -->
       <div
-        class="border-[#e5e5e5] border-t-2 flex justify-between items-center pt-8 w-[1275px] mt-20"
+        class="border-[#e5e5e5] border-t-2 flex justify-between items-center pt-8 mt-20"
       >
         <div class="flex">
           <h4>© 2024 Rediones. All rights reserved</h4>
