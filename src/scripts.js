@@ -48,9 +48,10 @@ const faqdata = [
     question:
       "How can I contact Rediones for support or partnership opportunities?",
     answer:
-      'You can reach us at <a href="mailto:redionesofficial@gmail.com" class="text-mainColor-0">redionesofficial@gmail.com</a> for general inquiries and collaboration opportunities.',
+      'You can reach us at <a href="mailto:redionesofficial@gmail.com" class="underline">redionesofficial@gmail.com</a> for general inquiries and collaboration opportunities.',
   },
 ];
+
 // generating faq list......
 const faqcont = document.querySelector(".faq-cont");
 faqdata.forEach(({ question, answer }) => {

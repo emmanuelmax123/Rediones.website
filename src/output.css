@@ -710,6 +710,18 @@ h5 {
   margin-left: 24px;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mb-\[65px\] {
+  margin-bottom: 65px;
+}
+
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -850,6 +862,34 @@ h5 {
 
 .w-\[320px\] {
   width: 320px;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[450px\] {
+  width: 450px;
+}
+
+.w-\[420px\] {
+  width: 420px;
+}
+
+.w-\[410px\] {
+  width: 410px;
+}
+
+.w-\[405px\] {
+  width: 405px;
+}
+
+.w-\[403px\] {
+  width: 403px;
 }
 
 .flex-grow-\[2\.9\] {
@@ -1142,6 +1182,10 @@ h5 {
   padding: 0.5rem;
 }
 
+.p-\[46px\] {
+  padding: 46px;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1210,6 +1254,11 @@ h5 {
 .px-\[120px\] {
   padding-left: 120px;
   padding-right: 120px;
+}
+
+.py-\[57px\] {
+  padding-top: 57px;
+  padding-bottom: 57px;
 }
 
 .pb-9 {
@@ -1285,6 +1334,10 @@ h5 {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .antialiased {
@@ -1435,5 +1488,10 @@ h5 {
 
 .group:hover .group-hover\:translate-x-\[570px\] {
   --tw-translate-x: 570px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:translate-x-\[650px\] {
+  --tw-translate-x: 650px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
