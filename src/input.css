@@ -24,7 +24,7 @@
 }
 @layer utilities {
   .main-btn {
-    @apply bg-mainColor-0 rounded-[27px] h-12 w-[217px] py-[14px] px-[42px] font-secfont font-semibold text-[16px];
+    @apply bg-mainColor-0 rounded-[27px] h-12 w-[217px] py-[14px] max-xs:py-[11px] px-[42px] max-xs:px-[35px] font-secfont font-semibold text-[16px];
   }
   .card {
     @apply rounded-[17.57px] bg-[#373737]  hover:bg-mainColor-0 text-white overflow-hidden  transition duration-500;
@@ -33,18 +33,34 @@
     @apply group-hover:scale-105 transition duration-500;
   }
   .h1mini {
-    @apply font-subfont;
+    @apply font-subfont max-xxs:w-[280px] max-xxs:text-[28px] max-xs:text-[35px] max-lg:mb-[24px]  max-lg:text-[41px];
   }
   .sec-btn {
     @apply text-[#D94A4A] bg-white h-12 px-5 flex items-center justify-between rounded-full mb-[24px] opacity-0 bottom-0 absolute group-hover:opacity-100 font-secfont font-semibold;
+  }
+  .small-btn {
+    @apply text-[#D94A4A] bg-white h-[24px] px-5 flex items-center justify-center rounded-full font-secfont font-semibold text-[12px] max-xxs:hidden;
   }
   .container {
     @apply p-5;
   }
   .faqsect {
-    @apply p-5  border-[#414141] border-b-2 w-[1206px];
+    @apply p-5  border-[#414141] border-b-2;
   }
   .navdivadjuster {
-    @apply pt-[90px] mb-[100px];
+    @apply pt-[90px] max-sm:pt-[30px] mb-[100px];
+  }
+  .h21024 {
+    @apply max-xl:text-[22px] text-[26px] max-lg:text-[18px];
+  }
+  .h41024 {
+    @apply text-[16px] max-lg:text-[12px];
+  }
+  .featuresat425 {
+    @apply w-[380px] max-xxs:w-[280px] max-xs:w-[345px] h-[233px] flex p-[20px] max-xxs:h-32 overflow-hidden rounded-[11px];
+  }
+
+  .imgcontat425 {
+    @apply flex items-center justify-center w-full;
   }
 }

@@ -21,7 +21,7 @@ const faqdata = [
   {
     question: "What is Rediones?",
     answer:
-      "Rediones is a social platform designed to help students connect, collaborate, and explore university life. Whether you're looking to build connections, gain experience, or see what campus life is like, Rediones provides a space to engage with like-minded students.",
+      "Rediones is a social platform designed to help students connect, collaborate, and explore university life.",
   },
   {
     question: "When will Rediones be officially launched?",
@@ -29,9 +29,9 @@ const faqdata = [
       "We have completed the beta launch, where our ambassadors tested the platform and provided valuable feedback. We're now fixing bugs, improving features, and preparing for the full release. Stay tuned for updates, and join the waitlist to be among the first to experience Rediones!",
   },
   {
-    question: "How does the 'Create Project' feature work?",
+    question: "How does the Create Project feature work?",
     answer:
-      "The 'Create Project' feature allows students to launch projects, find teammates, and work collaboratively. Users can apply for projects that match their skills, interact in dedicated project spaces, and gain real-world experience for future internships or jobs.",
+      "The Create Project feature allows students to launch projects, find teammates, and work collaboratively. Users can apply for projects that match their skills, interact in dedicated project spaces, and gain real-world experience for future internships or jobs.",
   },
 
   {
@@ -57,22 +57,24 @@ const faqcont = document.querySelector(".faq-cont");
 faqdata.forEach(({ question, answer }) => {
   faqcont.innerHTML += `
   <div class="faqsect questioncont">
-             <div class="flex justify-between">
-               <h5 class="text-mainColor-0">
+             <div class="flex justify-between items-center">
+               <h5 class="text-mainColor-0 max-xs:text-[14px] max-sm:w-[250px] ">
                  ${question}
                </h5>
+              
                <svg
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24"
                  width="18"
                  height="18"
                  fill="rgba(217,74,74,1)"
-                 class="opensign mt-2"
+                 class="opensign"
                >
                  <path
                    d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
                  ></path>
                </svg>
+            
                <svg
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24"
@@ -87,7 +89,7 @@ faqdata.forEach(({ question, answer }) => {
                </svg>
              </div>
              <div class="hidden answercont mt-2">
-               <h5>
+               <h5 class="max-xs:text-[12px] text-[16px]  max-xxs:w-[214px] max-sm:w-[270px]" >
                 ${answer}
                </h5>
              </div>

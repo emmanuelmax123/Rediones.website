@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="output.css" />
     <title>Rediones</title>
   </head>
-  <body class="bg-[#090B0E] text-white flex flex-col items-center min-h-screen">
+  <body
+    class="bg-[#090B0E] text-white flex flex-col items-center min-h-screen border-2 border-white"
+  >
     <!-- nav start here -->
     <nav
-      class="h-[80px] flex items-center justify-between mb-[50px] w-full px-[120px] fixed z-50 top-0 bg-[#090B0E] transition-transform duration-300"
+      class="bg-[#090B0E] h-[80px] flex items-center justify-between xl:justify-center mb-[141px] lg:mb-[84px] max-lg:mb-[42px] lg:w-[900px] xl:w-full max-lg:w-[695px] max-sm:hidden xl:gap-[150px] sticky z-50 top-0 transition-transform duration-300"
       id="js-nav"
     >
       <!-- rediones logo -->
       <a href="index.html"
         ><img src="../assets/logo.png" alt="logo" class="h-[33px]"
       /></a>
-      <ul class="flex items-center justify-between gap-8 h-[46px]">
+      <ul class="flex items-center justify-between lg:gap-8 h-[46px]">
         <!-- home section sarts here -->
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
@@ -71,9 +73,9 @@
         </li>
       </ul>
       <button
-        class="bg-[#D94A4A] h-12 px-7 py-3 flex items-center justify-between rounded-[27px] font-secfont font-semibold"
+        class="bg-[#D94A4A] h-12 px-7 py-3 hidden items-center justify-between rounded-[27px] font-secfont font-semibold xl:flex"
       >
-        <h4 class="">Download Beta</h4>
+        <h4 class="">Preview Layout</h4>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -87,15 +89,86 @@
         </svg>
       </button>
     </nav>
+
+    <!-- nav at 435px screen -->
+    <nav class="hidden max-sm:block fixed top-0 z-50 bg-[#090B0E]">
+      <!-- rediones logo -->
+      <div
+        class="max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] mt-[31px] items-center flex"
+      >
+        <a href="index.html"
+          ><img src="../assets/logo.png" alt="logo" class="h-[33px]"
+        /></a>
+      </div>
+      <ul
+        class="flex items-center justify-between h-[71px] max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px]"
+      >
+        <!-- home section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] max-xxs:px-[2px] pr-[5px] flex flex-col justify-center items-center"
+        >
+          <a href="#home" class="pr-2 max-xs:pr-0 py-2">Home</a>
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
+          ></span>
+        </li>
+
+        <!-- feature section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] px-[5px] max-xxs:px-[2px] flex flex-col justify-center items-center"
+        >
+          <a href="#feature" class="p-2 max-xs:px-0">Feature</a>
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
+          ></span>
+        </li>
+        <!-- Join section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] px-[5px] max-xxs:px-[2px] flex flex-col justify-center items-center"
+        >
+          <a href="#join" class="p-2 max-xs:px-0">Join</a>
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
+          ></span>
+        </li>
+        <!-- FAQs section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] px-[5px] max-xxs:px-[2px] flex flex-col justify-center items-center"
+        >
+          <a href="#faq" class="p-2 max-xs:px-0">FAQs</a>
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
+          ></span>
+        </li>
+        <!-- Contact Us section sarts here -->
+        <li
+          class="relative js-navlink h-[48px] py-[12px] px-[5px] max-xxs:px-[2px] flex flex-col justify-center items-center"
+        >
+          <a href="mailto:redionesofficial@gmail.com" class="p-2 max-xs:px-0"
+            >Contact Us</a
+          >
+          <span
+            class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
+          ></span>
+        </li>
+      </ul>
+    </nav>
+
     <!-- rediones into -->
     <section
-      class="flex items-center justify-between w-[1244px] mb-[50px] pt-[130px]"
+      class="flex items-center max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] lg:w-[900px] max-lg:w-[695px] justify-between xl:w-[1244px] max-sm:mt-[200px] mb-[50px] max-sm:mb-[550px] max-lg:mb-[220px] lg:gap-[30px] relative"
       id="home"
     >
       <!-- main text -->
-      <div class="w-[650px] flex flex-col gap-[33.5px]">
-        <h1 class="mainfont">We're Redefining The Student Experience</h1>
-        <h3>
+      <div
+        class="max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] md:w-[585px] xl:w-[650px] flex flex-col gap-[33.5px]"
+      >
+        <h1 class="mainfont max-xxs:text-[38px] max-xs:text-[48px]">
+          We're Redefining the Student Experience
+        </h1>
+        <h3
+          class="max-xxs:text-[16px] max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[490px]"
+        >
           Connect with like-minded students, explore new opportunities, and make
           your mark. Together, we're shaping the future of learning and
           collaboration.
@@ -103,10 +176,12 @@
         <button class="main-btn">Join the waitlist</button>
       </div>
 
-      <!-- images goes here -->
-      <div class="flex justify-between gap-[30px] border-white w-fit">
+      <!-- images for laptop and 425px screen goes here -->
+      <div
+        class="flex justify-between gap-[30px] max-xxs:gap-[10px] border-white w-fit max-xxs:w-[280px] max-sm:flex max-lg:hidden max-sm:absolute max-xxs:translate-x-0 max-xs:translate-x-[12px] max-sm:translate-x-[60px] max-xxs:translate-y-[500px] max-sm:translate-y-[550px]"
+      >
         <!-- col 1 -->
-        <div class="pt-[140px]">
+        <div class="pt-[140px] hidden xl:block">
           <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
               src="../assets/kola.jpg"
@@ -116,36 +191,78 @@
           </div>
         </div>
         <!-- col 2 -->
+        <div class="pt-[70px] gap-[37px] max-xxs:gap-[10px] flex flex-col">
+          <div
+            class="w-[144px] max-xxs:w-[135px] h-[177px] overflow-hidden rounded-2xl"
+          >
+            <img
+              src="../assets/femi.jpg"
+              alt=""
+              class="object-cover w-full h-full scale-150 translate-y-2 translate-x-6 grayscale hover:filter-none max-sm:filter-none"
+            />
+          </div>
+          <div
+            class="w-[144px] max-xxs:w-[135px] h-[177px] overflow-hidden rounded-2xl"
+          >
+            <img
+              src="../assets/joab2.jpg"
+              alt=""
+              class="object-cover w-full h-full grayscale hover:filter-none translate-y-1 max-sm:filter-none"
+            />
+          </div>
+        </div>
+        <!-- col 3 -->
+        <div class="gap-[37px] max-xxs:gap-[10px] flex flex-col">
+          <div
+            class="w-[144px] max-xxs:w-[135px] h-[177px] overflow-hidden rounded-2xl"
+          >
+            <img
+              src="../assets/kolapo.jpg"
+              alt=""
+              class="object-cover w-full h-full grayscale hover:filter-none max-sm:filter-none"
+            />
+          </div>
+
+          <div
+            class="w-[144px] max-xxs:w-[135px] h-[177px] overflow-hidden rounded-2xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="object-cover w-full h-full grayscale hover:filter-none max-sm:filter-none"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- images for tables screen goes here -->
+      <div
+        class="flex justify-between gap-[30px] border-white w-fit max-sm:hidden lg:hidden absolute translate-x-[350px] translate-y-44"
+      >
+        <!-- col 1 -->
+        <div class="pt-[200px]">
+          <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
+            <img
+              src="../assets/kola.jpg"
+              alt=""
+              class="object-cover w-full h-full antialiased"
+            />
+          </div>
+        </div>
+        <!-- col 2 -->
         <div class="pt-[70px] gap-[37px] flex flex-col">
           <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
               src="../assets/femi.jpg"
               alt=""
-              class="object-cover w-full h-full scale-150 translate-y-2 translate-x-6 grayscale hover:filter-none"
+              class="object-cover w-full h-full"
             />
           </div>
           <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
               src="../assets/joab2.jpg"
               alt=""
-              class="object-cover w-full h-full grayscale hover:filter-none translate-y-1"
-            />
-          </div>
-        </div>
-        <!-- col 3 -->
-        <div class="gap-[37px] flex flex-col">
-          <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
-            <img
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
-              alt=""
-              class="object-cover w-full h-full grayscale hover:filter-none"
-            />
-          </div>
-          <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
-            <img
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
-              alt=""
-              class="object-cover w-full h-full grayscale hover:filter-none"
+              class="object-cover w-full h-full"
             />
           </div>
         </div>
@@ -154,20 +271,27 @@
 
     <!-- feature section starts here -->
     <section class="navdivadjuster" id="feature">
-      <div class="flex flex-col items-center w-[1244px]">
+      <div
+        class="flex flex-col items-center max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] lg:w-[900px] xl:w-[1244px] max-sm:text-center"
+      >
         <h1 class="h1mini mb-5">Explore Some Of Our Features</h1>
-        <h3>
+        <h3
+          class="max-xxs:text-[14px] max-xs:text-[17px] max-xxs:w-[280px] max-xs:w-[320px]"
+        >
           We offer a variety of features that cater to the needs and interests
           of scholars
         </h3>
+        <!-- 5 main feature section -->
         <div
-          class="grid grid-cols-3 h-[843.51px] text-black gap-[21.97px] mt-[100px]"
+          class="grid grid-cols-3 max-lg:h-[537px] max-xl:h-[730px] h-[843.51px] text-black gap-[21.97px] mt-[100px] max-xl:gap-[19px] max-sm:hidden"
         >
           <!-- no1 -->
-          <div class="col-span-1 h-[503.74px] card group relative">
+          <div
+            class="col-span-1 max-xl:h-[436px] max-lg:h-[321px] h-[503.74px] card group relative"
+          >
             <div class="mx-[24px] mt-[24px]">
-              <h2>Create Project</h2>
-              <h4>
+              <h2 class="h21024">Create Project</h2>
+              <h4 class="h41024">
                 Collaborate with peers on impactful projects, sharing knowledge
                 and broaden your network.
               </h4>
@@ -175,8 +299,8 @@
             <div class="flex flex-col items-center">
               <img
                 src="../assets/mask (1).png"
-                alt=""
-                class="cardimg mt-2 translate-x-[14px]"
+                alt="An image of create project section"
+                class="cardimg mt-2 max-xl:-translate-x-2 max-xl:w-[250px] translate-x-[14px] max-lg:w-[180px] translate-y-4 max-lg:-translate-y-2"
               />
             </div>
             <!-- button starts here -->
@@ -189,11 +313,17 @@
             >
           </div>
           <!-- no2 -->
-          <div class="col-span-1 h-[503.74px] card group">
-            <img src="../assets/CP.png" alt="" class="cardimg" />
-            <div class="mx-[24px] mt-[24px]">
-              <h2>Community Practice</h2>
-              <h4>
+          <div
+            class="col-span-1 max-xl:h-[436px] max-lg:h-[321px] h-[503.74px] card group pb-[24px]"
+          >
+            <img
+              src="../assets/CP.png"
+              alt="An image of the community practice"
+              class="cardimg max-lg:w-[160px] max-lg:-translate-y-6"
+            />
+            <div class="mx-[24px] max-xl:mt-0 mt-[24px]">
+              <h2 class="h21024">Community Practice</h2>
+              <h4 class="h41024">
                 No academic struggle is faced alone. This space encourages
                 collaboration so everyone can thrive.
               </h4>
@@ -201,28 +331,37 @@
           </div>
           <!-- no3 -->
           <div
-            class="col-span-1 h-[503.74px] card group flex flex-col items-center"
+            class="col-span-1 max-xl:h-[436px] h-[503.74px] card group flex flex-col items-center max-lg:h-[321px]"
           >
             <div class="mx-[24px] mt-[24px]">
-              <h2>Events</h2>
-              <h4>
+              <h2 class="h21024">Events</h2>
+              <h4 class="h41024">
                 Host workshops, talks, and performances, igniting the minds of
                 others with your passion and knowledge.
               </h4>
             </div>
-            <img src="../assets/events.png" alt="" class="cardimg mt-4" />
+            <img
+              src="../assets/events.png"
+              alt="An image of the event section"
+              class="cardimg mt-4 max-lg:w-[160px]"
+            />
           </div>
-          <div class="col-span-3 flex gap-[21.97px]">
+
+          <div class="col-span-3 flex gap-[21.97px] max-xl:gap-[19px]">
             <!-- no4 -->
-            <div class="flex-grow-[4.1] h-[316.3px] relative card group">
+            <div
+              class="flex-grow-[4.1] max-lg:h-[201px] max-xl:h-[274px] h-[316.3px] relative card group"
+            >
               <img
                 src="../assets/spotlight.png"
-                alt=""
-                class="cardimg z-0 translate-x-48"
+                alt="An image of the spotlight section"
+                class="cardimg z-0 max-lg:translate-x-20 max-xl:translate-x-16 translate-x-48 max-lg:-translate-y-10 max-xl:-translate-y-14 max-lg:w-[265px] max-lg:h-[196px] max-xl:w-[360px] max-xl:h-[267px]"
               />
-              <div class="mx-[24px] mb-[24px] bottom-0 absolute z-10 w-[530px]">
-                <h2>Showcase With Spotlight</h2>
-                <h4>
+              <div
+                class="mx-[24px] mb-[24px] bottom-0 absolute z-10 max-xl:w-[341px] w-[530px]"
+              >
+                <h2 class="h21024">Showcase With Spotlight</h2>
+                <h4 class="h41024">
                   Share your personal stories, experiences, vlogs, and tips to
                   inspire, entertain, and connect with the community!
                 </h4>
@@ -230,15 +369,19 @@
             </div>
 
             <!-- no5 -->
-            <div class="flex-grow-[2.9] h-[316.3px] card group relative">
+            <div
+              class="flex-grow-[2.9] max-lg:h-[201px] max-xl:h-[274px] h-[316.3px] card group relative"
+            >
               <img
                 src="../assets/audioverse.png"
-                alt=""
-                class="cardimg z-0 translate-x-28"
+                alt="An image of the audioverse section"
+                class="cardimg z-0 translate-x-28 max-lg:w-[216px] max-lg:h-[211px] max-lg:translate-x-20"
               />
-              <div class="ml-[24px] mb-[24px] bottom-0 absolute z-10 w-[320px]">
-                <h2>Listen with Audio-Verse</h2>
-                <h4>
+              <div
+                class="ml-[24px] mb-[24px] bottom-0 absolute z-10 max-xl:w-[281px] w-[320px]"
+              >
+                <h2 class="h21024">Listen with Audio-Verse</h2>
+                <h4 class="h41024 max-lg:w-[205px]">
                   Listen to the comment section as an audio stream, similar to a
                   podcast.
                 </h4>
@@ -255,13 +398,151 @@
             </div>
           </div>
         </div>
+
+        <!-- 425px 5 main features starts here -->
+        <div class="hidden max-sm:flex flex-col gap-4 mt-[70px]">
+          <!-- no1 -->
+          <div class="featuresat425 bg-mainColor-0">
+            <!--  feature 1 text section starts here -->
+            <div class="justify-center items-start flex flex-col">
+              <h3 class="text-[16px] font-mainfont font-bold mb-[11px]">
+                Create Project
+              </h3>
+              <h4
+                class="text-[12px] w-[160px] max-xxs:w-full max-xs:w-[135px] mb-[35px] max-sm:mb-6 max-xxs:mb-0 text-left"
+              >
+                Collaborate with peers on impactful projects, sharing knowledge
+                and broaden your network.
+              </h4>
+              <!-- button starts here -->
+              <a
+                class="small-btn"
+                href="https://www.figma.com/proto/OgYMxIMbRPjUaQtGyatSX6/Rediones?node-id=986-4179&t=kBJBN9mDakauUzLo-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=986%3A4179"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Preview Layout</a
+              >
+            </div>
+
+            <!-- feature 1 image starts here -->
+            <div class="imgcontat425 max-xxs:hidden">
+              <img
+                src="../assets/mask (1).png"
+                alt="An image of create project section"
+                class="w-[180px] translate-y-3 max-xs:translate-y-8"
+              />
+            </div>
+          </div>
+
+          <!-- no2 -->
+          <div
+            class="featuresat425 max-xxs:p-[20px] max-xs:pl-[0px] bg-[#373737]"
+          >
+            <!-- feature 1 image starts here -->
+            <img
+              src="../assets/CP.png"
+              alt="An image of the community practice"
+              class="w-[180px] max-xs:w-[180px] -translate-x-3 -translate-y-5 max-xxs:hidden"
+            />
+            <!--  feature 1 text section starts here -->
+            <div
+              class="justify-center items-start flex flex-col max-xs:text-left"
+            >
+              <h3 class="text-[16px] font-mainfont font-bold mb-[11px]">
+                Community Practice
+              </h3>
+              <h4
+                class="text-[12px] w-[160px] max-xxs:w-full max-xs:w-[135px] text-left"
+              >
+                No academic struggle is faced alone. This space encourages
+                collaboration so everyone can thrive.
+              </h4>
+            </div>
+          </div>
+
+          <!-- no3 -->
+          <div class="featuresat425 bg-[#373737]">
+            <!--  feature 1 text section starts here -->
+            <div class="justify-center items-start flex flex-col">
+              <h3 class="text-[16px] font-mainfont font-bold mb-[11px]">
+                Events
+              </h3>
+              <h4
+                class="text-[12px] w-[160px] max-xxs:w-full max-xs:w-[135px] text-left"
+              >
+                Host workshops, talks, and performances, igniting the minds of
+                others with your passion and knowledge.
+              </h4>
+            </div>
+
+            <!-- feature 1 image starts here -->
+            <div class="imgcontat425 max-xxs:hidden">
+              <img
+                src="../assets/events.png"
+                alt="An image of the event section"
+                class="w-[148px] translate-y-5"
+              />
+            </div>
+          </div>
+
+          <!-- no4 -->
+          <div class="featuresat425 bg-[#373737]">
+            <!-- feature 1 image starts here -->
+            <div class="overflow-hidden">
+              <img
+                src="../assets/spotlight425.png"
+                alt="An image of the spotlight section"
+                class="translate-x-4 translate-y-4 max-xs:scale-[1.20] max-xxs:hidden"
+              />
+            </div>
+
+            <!--  feature 1 text section starts here -->
+            <div class="justify-center items-start flex flex-col">
+              <h3
+                class="text-[16px] font-mainfont font-bold mb-[11px] text-left"
+              >
+                Showcase With Spotlight
+              </h3>
+              <h4
+                class="text-[12px] w-[160px] max-xs:w-[135px] text-left max-xxs:w-full"
+              >
+                Share your personal stories, experiences, vlogs, and tips to
+                inspire, entertain, and connect with the community!
+              </h4>
+            </div>
+          </div>
+
+          <!-- no5 -->
+          <div class="featuresat425 bg-[#373737]">
+            <!--  feature 1 text section starts here -->
+            <div class="justify-center items-start flex flex-col">
+              <h3 class="text-[16px] font-mainfont font-bold mb-[11px]">
+                Events
+              </h3>
+              <h4
+                class="text-[12px] w-[160px] max-xxs:w-full max-xs:w-[135px] text-left"
+              >
+                Host workshops, talks, and performances, igniting the minds of
+                others with your passion and knowledge.
+              </h4>
+            </div>
+
+            <!-- feature 1 image starts here -->
+
+            <img
+              src="../assets/audioverse425.png"
+              alt="An image of the event section"
+              class="-translate-x-4 max-xs:-translate-x-9 max-xs:scale-110 max-xxs:hidden"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- become an ambassador starts here -->
     <section class="navdivadjuster" id="join">
       <div
-        class="w-[1244px] bg-cover bg-center h-[399px] p-[46px] rounded-[20.16px]"
+        class="flex flex-col bg-cover bg-center h-[250px] p-[20px] max-sm:pl-[10px] max-sm:py-0 max-sm:pr-0 xl:h-[399px] lg:p-[46px] rounded-[20.16px] lg:h-[350px] max-lg:h-[350px] max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] lg:w-[900px] xl:w-[1244px]"
         style="
           background-image: linear-gradient(
               115deg,
@@ -273,10 +554,14 @@
           background-position: center;
         "
       >
-        <h1 class="w-[322px] text-[33px] mb-[25px]">
+        <h1
+          class="w-[322px] text-[33px] max-xxs:text-[22px] max-xs:text-[27px] max-sm:text-[29px] lg:mb-[18px] xl:mb-[25px] max-sm:mt-[76px] max-sm:mb-[17px]"
+        >
           Become a Rediones Ambassador
         </h1>
-        <h2 class="text-[20px] font-semibold w-[321px] mb-[65px]">
+        <h2
+          class="text-[20px] max-xs:text-[16px] max-xxs:text-[13px] max-sm:text-[17px] font-semibold w-[321px] max-xxs:w-[212px] max-sm:mb-[51px] lg:mb-[57px] xl:mb-[65px]"
+        >
           Champion Innovation and Build Connections with Rediones
         </h2>
 
@@ -284,11 +569,11 @@
           <a
             href="https://forms.gle/6PFMLmungjFTRps77"
             aria-label="Sign up to become a Rediones ambassador by filling out this form"
-            class="rounded-[27px] h-12 py-[14px] px-[42px] font-secfont font-semibold bg-white text-mainColor-0 text-[13.44px] group relative"
+            class="flex items-center justify-center rounded-[27px] h-12 max-sm:h-[38px] px-[42px] max-xxs:px-[23.26px] max-xs:px-[28.66px] max-xxs:h-[28px] max-xs:h-[35.11px] font-secfont font-semibold bg-white text-mainColor-0 text-[13.44px] max-sm:text-[11px] group relative"
           >
             Become an Ambassador
             <div
-              class="w-[405px] px-2 py-1 hidden group-hover:block group-hover:translate-x-[650px] text-[20px] bg-mainColor-0 text-white absolute top-0 left-0 transition-all duration-300 z-10"
+              class="w-[405px] px-2 py-1 hidden group-hover:block group-hover:translate-x-[650px] text-[20px] bg-mainColor-0 text-white absolute top-0 left-0 transition-all duration-300 z-10 max-sm:hidden"
             >
               For the Ones Ready to Lead the Future.
             </div>
@@ -296,32 +581,53 @@
         </div>
       </div>
     </section>
+
     <!-- FAQ Starts here -->
-    <section class="navdivadjuster" id="faq">
+    <section
+      class="navdivadjuster max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] max-xl:w-[900px] xl:w-[1244px]"
+      id="faq"
+    >
       <div class="flex flex-col items-center justify-center">
-        <h1 class="h1mini mb-5">
+        <h1
+          class="h1mini mb-5 max-xxs:text-[26px] max-xs:text-[32px] max-sm:text-center"
+        >
           <span class="text-mainColor-0">Frequently</span> asked questions
         </h1>
-        <h3>Everything you need to know about our platform</h3>
+        <h3 class="text-[#6f6f6f] max-sm:text-center max-xs:text-[16px]">
+          Everything you need to know about our platform
+        </h3>
         <!-- questions -->
-        <div class="mb-6 mt-10 faq-cont"></div>
+        <div class="mb-6 mt-10 faq-cont w-full"></div>
       </div>
     </section>
-    <footer class="bg-[#0f0f0f] h-fit px-20 pb-9 mt-24 w-full">
+
+    <!-- footer starts here -->
+    <footer
+      class="bg-[#0f0f0f] h-fit max-lg:px-8 px-20 pb-9 mt-24 w-full flex flex-col items-center"
+    >
       <!-- newsletter section -->
       <div
-        class="flex justify-between items-center bg-[#1f1f1f] z-10 px-[103px] py-[60px] -mt-24 rounded-[24px]"
+        class="flex justify-between max-sm:flex-col items-center bg-[#1f1f1f] z-10 px-[103px] max-sm:py-[15px] py-[60px] w-[1231px] -mt-24 max-sm:rounded-[9px] rounded-[24px] max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] max-xl:w-[900px] max-xl:py-[48px] max-lg:px-[44px] max-xl:px-[72px]"
         style="box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25)"
       >
-        <h3 class="font-mainfont text-[32px]">Subscribe Newsletters</h3>
-        <div class="bg-white p-2 w-[605px] flex gap-4 rounded-[4px]">
+        <div class="max-xxs:w-[246px] max-sm:w-[323px] font-mainfont">
+          <h4 class="text-[15px] max-xxs:text-[12px]">Stay Informed</h4>
+          <h3 class="text-[32px] max-xl:text-[24px] max-xxs:text-[20px]">
+            Join Our Newsletter
+          </h3>
+        </div>
+
+        <!-- form section -->
+        <div
+          class="bg-white p-2 max-sm:mt-[17px] w-[605px] flex gap-4 rounded-[4px] max-xxs:w-[246px] max-lg:w-[323px] max-xl:w-[442px]"
+        >
           <input
             type="text"
             placeholder="Enter your email"
-            class="text-black w-full focus:outline-none bg-transparent"
+            class="text-black w-full focus:outline-none bg-transparent max-xxs:text-[13px]"
           />
           <button
-            class="bg-mainColor-0 py-4 px-7 w-[200px] h-[52px] text-[16px] rounded-[4px]"
+            class="bg-mainColor-0 py-4 px-7 w-[200px] h-[52px] text-[16px] max-xxs:text-[13px] rounded-[4px] max-xl:h-[42px] max-xl:py-[10px] max-xl:px-2"
           >
             Subcribe Now
           </button>
@@ -330,12 +636,12 @@
 
       <!-- main footer section -->
       <div
-        class="border-[#e5e5e5] border-t-2 flex justify-between items-center pt-8 mt-20"
+        class="border-[#e5e5e5] border-t-2 flex justify-between items-center pt-8 mt-20 w-full"
       >
-        <div class="flex">
-          <h4>© 2024 Rediones. All rights reserved</h4>
+        <div class="flex max-sm:w-[150px]">
+          <h4>© 2025 Rediones. All rights reserved</h4>
         </div>
-        <div class="flex"></div>
+
         <div class="flex gap-3">
           <!-- linkedin starts here -->
           <a
