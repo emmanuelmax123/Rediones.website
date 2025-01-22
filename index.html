@@ -64,7 +64,7 @@
         person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
       });
     </script>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Rediones</title>
   </head>
   <body class="bg-[#090B0E] text-white flex flex-col items-center min-h-screen">
@@ -75,7 +75,7 @@
     >
       <!-- rediones logo -->
       <a href="index.html"
-        ><img src="../assets/logo.png" alt="logo" class="h-[33px]"
+        ><img src="./assets/logo.png" alt="logo" class="h-[33px]"
       /></a>
       <ul class="flex items-center justify-between lg:gap-8 h-[46px]">
         <!-- home section sarts here -->
@@ -144,13 +144,15 @@
     </nav>
 
     <!-- nav at 435px screen -->
-    <nav class="hidden max-sm:block fixed top-0 z-50 bg-[#090B0E]">
+    <nav
+      class="hidden max-xxs:w-[280px] max-sm:block fixed top-0 z-50 bg-[#090B0E]"
+    >
       <!-- rediones logo -->
       <div
         class="max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] mt-[31px] items-center flex"
       >
         <a href="index.html"
-          ><img src="../assets/logo.png" alt="logo" class="h-[33px]"
+          ><img src="./assets/logo.png" alt="logo" class="h-[33px]"
         /></a>
       </div>
       <ul
@@ -226,7 +228,15 @@
           your mark. Together, we're shaping the future of learning and
           collaboration.
         </h3>
-        <button class="main-btn">Join the waitlist</button>
+        <button class="main-btn">
+          <a
+            href="https://forms.gle/46KNDZuVLNRB7xYp8"
+            aria-label="Click to join the waitlist"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Join the waitlist</a
+          >
+        </button>
       </div>
 
       <!-- images for laptop and 425px screen goes here -->
@@ -237,7 +247,7 @@
         <div class="pt-[140px] hidden xl:block">
           <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
-              src="../assets/kola.jpg"
+              src="./assets/kola.jpg"
               alt=""
               class="object-cover w-full h-full grayscale hover:filter-none antialiased"
             />
@@ -249,7 +259,7 @@
             class="w-[144px] max-xxs:w-[135px] h-[177px] overflow-hidden rounded-2xl"
           >
             <img
-              src="../assets/femi.jpg"
+              src="./assets/femi.jpg"
               alt=""
               class="object-cover w-full h-full scale-150 translate-y-2 translate-x-6 grayscale hover:filter-none max-sm:filter-none"
             />
@@ -258,7 +268,7 @@
             class="w-[144px] max-xxs:w-[135px] h-[177px] overflow-hidden rounded-2xl"
           >
             <img
-              src="../assets/joab2.jpg"
+              src="./assets/joab2.jpg"
               alt=""
               class="object-cover w-full h-full grayscale hover:filter-none translate-y-1 max-sm:filter-none"
             />
@@ -270,7 +280,7 @@
             class="w-[144px] max-xxs:w-[135px] h-[177px] overflow-hidden rounded-2xl"
           >
             <img
-              src="../assets/kolapo.jpg"
+              src="./assets/kolapo.jpg"
               alt=""
               class="object-cover w-full h-full grayscale hover:filter-none max-sm:filter-none"
             />
@@ -296,7 +306,7 @@
         <div class="pt-[200px]">
           <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
-              src="../assets/kola.jpg"
+              src="./assets/kola.jpg"
               alt=""
               class="object-cover w-full h-full antialiased"
             />
@@ -306,14 +316,14 @@
         <div class="pt-[70px] gap-[37px] flex flex-col">
           <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
-              src="../assets/femi.jpg"
+              src="./assets/femi.jpg"
               alt=""
               class="object-cover w-full h-full"
             />
           </div>
           <div class="w-[144px] h-[177px] overflow-hidden rounded-2xl">
             <img
-              src="../assets/joab2.jpg"
+              src="./assets/joab2.jpg"
               alt=""
               class="object-cover w-full h-full"
             />
@@ -325,7 +335,7 @@
     <!-- feature section starts here -->
     <section class="navdivadjuster" id="feature">
       <div
-        class="flex flex-col items-center max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] lg:w-[900px] xl:w-[1244px] max-sm:text-center"
+        class="flex flex-col items-center max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] lg:w-[900px] xl:w-[1244px] max-sm:text-center"
       >
         <h1 class="h1mini mb-5">Explore Some Of Our Features</h1>
         <h3
@@ -351,7 +361,7 @@
             </div>
             <div class="flex flex-col items-center">
               <img
-                src="../assets/mask (1).png"
+                src="./assets/mask (1).png"
                 alt="An image of create project section"
                 class="cardimg mt-2 max-xl:-translate-x-2 max-xl:w-[250px] translate-x-[14px] max-lg:w-[180px] translate-y-4 max-lg:-translate-y-2"
               />
@@ -370,7 +380,7 @@
             class="col-span-1 max-xl:h-[436px] max-lg:h-[321px] h-[503.74px] card group pb-[24px]"
           >
             <img
-              src="../assets/CP.png"
+              src="./assets/CP.png"
               alt="An image of the community practice"
               class="cardimg max-lg:w-[160px] max-lg:-translate-y-6"
             />
@@ -394,7 +404,7 @@
               </h4>
             </div>
             <img
-              src="../assets/events.png"
+              src="./assets/events.png"
               alt="An image of the event section"
               class="cardimg mt-4 max-lg:w-[160px]"
             />
@@ -406,17 +416,17 @@
               class="flex-grow-[4.1] max-lg:h-[201px] max-xl:h-[274px] h-[316.3px] relative card group"
             >
               <img
-                src="../assets/spotlight.png"
-                alt="An image of the spotlight section"
+                src="./assets/spotlight.png"
+                alt="An image of the Message Pocket section"
                 class="cardimg z-0 max-lg:translate-x-20 max-xl:translate-x-16 translate-x-48 max-lg:-translate-y-10 max-xl:-translate-y-14 max-lg:w-[265px] max-lg:h-[196px] max-xl:w-[360px] max-xl:h-[267px]"
               />
               <div
                 class="mx-[24px] mb-[24px] bottom-0 absolute z-10 max-xl:w-[341px] w-[530px]"
               >
-                <h2 class="h21024">Showcase With Spotlight</h2>
+                <h2 class="h21024">Message Pocket</h2>
                 <h4 class="h41024">
-                  Share your personal stories, experiences, vlogs, and tips to
-                  inspire, entertain, and connect with the community!
+                  Message Pocket is your personal space to jot down thoughts,
+                  reminders, and to-do lists—all in one place.
                 </h4>
               </div>
             </div>
@@ -426,7 +436,7 @@
               class="flex-grow-[2.9] max-lg:h-[201px] max-xl:h-[274px] h-[316.3px] card group relative"
             >
               <img
-                src="../assets/audioverse.png"
+                src="./assets/audioverse.png"
                 alt="An image of the audioverse section"
                 class="cardimg z-0 translate-x-28 max-lg:w-[216px] max-lg:h-[211px] max-lg:translate-x-20"
               />
@@ -480,7 +490,7 @@
             <!-- feature 1 image starts here -->
             <div class="imgcontat425 max-xxs:hidden">
               <img
-                src="../assets/mask (1).png"
+                src="./assets/mask (1).png"
                 alt="An image of create project section"
                 class="w-[180px] translate-y-3 max-xs:translate-y-8"
               />
@@ -493,7 +503,7 @@
           >
             <!-- feature 1 image starts here -->
             <img
-              src="../assets/CP.png"
+              src="./assets/CP.png"
               alt="An image of the community practice"
               class="w-[180px] max-xs:w-[180px] -translate-x-3 -translate-y-5 max-xxs:hidden"
             />
@@ -531,7 +541,7 @@
             <!-- feature 1 image starts here -->
             <div class="imgcontat425 max-xxs:hidden">
               <img
-                src="../assets/events.png"
+                src="./assets/events.png"
                 alt="An image of the event section"
                 class="w-[148px] translate-y-5"
               />
@@ -543,8 +553,8 @@
             <!-- feature 1 image starts here -->
             <div class="overflow-hidden">
               <img
-                src="../assets/spotlight425.png"
-                alt="An image of the spotlight section"
+                src="./assets/spotlight425.png"
+                alt="An image of the Message Pocket section"
                 class="translate-x-4 translate-y-4 max-xs:scale-[1.20] max-xxs:hidden"
               />
             </div>
@@ -554,13 +564,13 @@
               <h3
                 class="text-[16px] font-mainfont font-bold mb-[11px] text-left"
               >
-                Showcase With Spotlight
+                Message Pocket
               </h3>
               <h4
                 class="text-[12px] w-[160px] max-xs:w-[135px] text-left max-xxs:w-full"
               >
-                Share your personal stories, experiences, vlogs, and tips to
-                inspire, entertain, and connect with the community!
+                Message Pocket is your personal space to jot down thoughts,
+                reminders, and to-do lists—all in one place.
               </h4>
             </div>
           </div>
@@ -583,7 +593,7 @@
             <!-- feature 1 image starts here -->
 
             <img
-              src="../assets/audioverse425.png"
+              src="./assets/audioverse425.png"
               alt="An image of the event section"
               class="-translate-x-4 max-xs:-translate-x-9 max-xs:scale-110 max-xxs:hidden"
             />
@@ -602,13 +612,13 @@
               rgba(221, 95, 95, 1) 0%,
               rgba(221, 95, 95, 0) 45%
             ),
-            url('../assets/CTA.jpg');
+            url('./assets/CTA.jpg');
           background-size: cover;
           background-position: center;
         "
       >
         <h1
-          class="w-[322px] text-[33px] max-xxs:text-[22px] max-xs:text-[27px] max-sm:text-[29px] lg:mb-[18px] xl:mb-[25px] max-sm:mt-[76px] max-sm:mb-[17px]"
+          class="w-[322px] max-xxs:w-[280px] text-[33px] max-xxs:text-[22px] max-xs:text-[27px] max-sm:text-[29px] lg:mb-[18px] xl:mb-[25px] max-sm:mt-[76px] max-sm:mb-[17px]"
         >
           Become a Rediones Ambassador
         </h1>
@@ -618,10 +628,13 @@
           Champion Innovation and Build Connections with Rediones
         </h2>
 
+        <!-- ambassador holder -->
         <div class="flex items-center">
           <a
-            href="https://forms.gle/6PFMLmungjFTRps77"
+            href="https://forms.gle/ppmASYi4kxd2yfAL8"
             aria-label="Sign up to become a Rediones ambassador by filling out this form"
+            rel="noopener noreferrer"
+            target="_blank"
             class="flex items-center justify-center rounded-[27px] h-12 max-sm:h-[38px] px-[42px] max-xxs:px-[23.26px] max-xs:px-[28.66px] max-xxs:h-[28px] max-xs:h-[35.11px] font-secfont font-semibold bg-white text-mainColor-0 text-[13.44px] max-sm:text-[11px] group relative"
           >
             Become an Ambassador
@@ -689,7 +702,7 @@
 
       <!-- main footer section -->
       <div
-        class="border-[#e5e5e5] border-t-2 flex justify-between items-center pt-8 mt-20 w-full"
+        class="border-[#e5e5e5] border-t-2 flex justify-between items-center pt-8 mt-20 w-full max-xxs:w-[280px]"
       >
         <div class="flex max-sm:w-[150px]">
           <h4>© 2025 Rediones. All rights reserved</h4>
@@ -698,7 +711,7 @@
         <div class="flex gap-3">
           <!-- linkedin starts here -->
           <a
-            href="https://www.linkedin.com/in/kolawole-sanyaolu-31812419a/"
+            href="https://www.linkedin.com/company/rediones/"
             class="border-[#e5e5e5] border-2 rounded-full p-2"
             target="_blank"
             rel="noopener noreferrer"
@@ -718,7 +731,7 @@
 
           <!-- x starts here -->
           <a
-            href="https://www.linkedin.com/in/kolawole-sanyaolu-31812419a/"
+            href="https://x.com/rediones"
             class="border-[#e5e5e5] border-2 rounded-full p-2"
             target="_blank"
             rel="noopener noreferrer"
@@ -738,7 +751,7 @@
 
           <!-- facebook starts here -->
           <a
-            href="https://www.linkedin.com/in/kolawole-sanyaolu-31812419a/"
+            href="https://www.facebook.com/redionesofficial"
             class="border-[#e5e5e5] border-2 rounded-full p-2"
             target="_blank"
             rel="noopener noreferrer"
@@ -759,5 +772,5 @@
       </div>
     </footer>
   </body>
-  <script src="scripts.js"></script>
+  <script src="./src/scripts.js"></script>
 </html>
