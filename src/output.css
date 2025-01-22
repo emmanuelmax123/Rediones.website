@@ -1283,6 +1283,16 @@ h5 {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2131,6 +2141,10 @@ h5 {
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-\[442px\] {
+    width: 442px;
   }
 
   .xl\:justify-center {

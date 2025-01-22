@@ -139,3 +139,53 @@ window.addEventListener("scroll", () => {
     lastscroll = currentscroll;
   }
 });
+
+// sending email
+
+function sendmail(event) {
+  event.preventDefault;
+  const result = document.getElementById("mail-result");
+  const emailInput = document.getElementById("footer-emailInput");
+  const email = emailInput.value.trim();
+
+  if (isValidEmail(email)) {
+    const serviceID = "service_lyqi76j";
+    const templateID = "template_riyai5o";
+
+    const emailData = { email: email };
+
+    emailjs
+      .send(serviceID, templateID, emailData)
+      .then((res) => {
+        emailInput.value = "";
+        result.textContent = "Subscription successful! Check your inbox.";
+
+        setTimeout(() => {
+          result.textContent = "";
+        }, 5000);
+      })
+      .catch((error) => {
+        result.style.color = "#D94A4A";
+        result.textContent = "There was an error, please try again.";
+
+        setTimeout(() => {
+          result.textContent = "";
+        }, 10000);
+        console.log(result.textContent);
+      });
+  } else {
+    emailInput.value = "";
+    result.textContent = "Please enter a valid email address.";
+    result.style.color = "#D94A4A";
+    setTimeout(() => {
+      result.textContent = "";
+    }, 10000);
+    console.log(result);
+  }
+}
+
+function isValidEmail(email) {
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  return emailRegex.test(email);
+}

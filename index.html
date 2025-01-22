@@ -64,6 +64,17 @@
         person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
       });
     </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "4ld3O6NmsPkYP9mav",
+        });
+      })();
+    </script>
     <link rel="stylesheet" href="./src/output.css" />
     <title>Rediones</title>
   </head>
@@ -684,21 +695,27 @@
         </div>
 
         <!-- form section -->
-        <div
-          class="bg-white p-2 max-sm:mt-[17px] w-[605px] flex gap-4 rounded-[4px] max-xxs:w-[246px] max-lg:w-[323px] max-xl:w-[442px]"
-        >
-          <input
-            type="text"
-            id="footer-text"
-            placeholder="Enter your email"
-            class="text-black w-full focus:outline-none bg-transparent max-xxs:text-[13px]"
-          />
-          <button
-            class="bg-mainColor-0 py-4 px-7 w-[200px] h-[52px] text-[16px] max-xxs:text-[13px] rounded-[4px] max-xl:h-[42px] max-xl:py-[10px] max-xl:px-2"
-            onclick="document.getElementById('footer-text').value=''"
+        <div>
+          <form
+            id="newsletter-form"
+            class="bg-white p-2 max-sm:mt-[17px] w-[605px] flex gap-4 rounded-[4px] max-xxs:w-[246px] max-lg:w-[323px] max-xl:w-[442px]"
           >
-            Subcribe Now
-          </button>
+            <input
+              type="text"
+              id="footer-emailInput"
+              placeholder="Enter your email"
+              class="text-black w-full focus:outline-none bg-transparent max-xxs:text-[13px]"
+            />
+            <button
+              id="submit-form"
+              type="button"
+              onclick="sendmail(event)"
+              class="bg-mainColor-0 py-4 px-7 w-[200px] h-[52px] text-[16px] max-xxs:text-[13px] rounded-[4px] max-xl:h-[42px] max-xl:py-[10px] max-xl:px-2"
+            >
+              Subcribe Now
+            </button>
+          </form>
+          <p id="mail-result" class="text-center mt-4 text-green-500"></p>
         </div>
       </div>
 
