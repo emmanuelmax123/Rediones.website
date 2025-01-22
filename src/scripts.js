@@ -171,7 +171,6 @@ function sendmail(event) {
         setTimeout(() => {
           result.textContent = "";
         }, 10000);
-        console.log(result.textContent);
       });
   } else {
     emailInput.value = "";
