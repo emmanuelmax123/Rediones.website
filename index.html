@@ -3,12 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rediones: A platform for students to collaborate, innovate, and shape the future of learning. Join our waitlist today!"
+    />
+    <meta
+      name="keywords"
+      content="Rediones, student collaboration, student projects, innovation, learning platform"
+    />
+    <meta
+      property="og:title"
+      content="Rediones | Redefining the Student Experience"
+    />
+    <meta
+      property="og:description"
+      content="Join Rediones to collaborate with like-minded students and shape the future of learning."
+    />
+    <meta property="og:image" content="./assets/logo.png" />
+    <meta property="og:url" content="https://rediones.example.com" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <meta
+      name="google-site-verification"
+      content="u_1uQtoo-V7aRvE6tS2ZtbF01GfAM1AAUQ0RRNxHYpE"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Rediones",
+        "url": "https://rediones.example.com",
+        "logo": "./assets/logo.png",
+        "sameAs": [
+          "https://www.linkedin.com/company/rediones/",
+          "https://x.com/rediones",
+          "https://www.facebook.com/redionesofficial"
+        ]
+      }
+    </script>
+
     <script>
       !(function (t, e) {
         var o, n, p, r;
@@ -76,17 +114,20 @@
       })();
     </script>
     <link rel="stylesheet" href="./src/output.css" />
-    <title>Rediones</title>
+    <title>
+      Rediones | Redefining the Student Experience Through Collaboration
+    </title>
   </head>
   <body class="bg-[#090B0E] text-white flex flex-col items-center min-h-screen">
     <!-- nav start here -->
     <nav
+      aria-label="Main navigation"
       class="bg-[#090B0E] h-[80px] flex items-center justify-between xl:justify-center mb-[141px] lg:mb-[84px] max-lg:mb-[42px] lg:w-[900px] xl:w-full max-lg:w-[695px] max-sm:hidden xl:gap-[150px] sticky z-50 top-0 transition-transform duration-300"
       id="js-nav"
     >
       <!-- rediones logo -->
       <a href="index.html"
-        ><img src="./assets/logo.png" alt="logo" class="h-[33px]"
+        ><img src="./assets/logo.png" alt="rediones logo" class="h-[33px]"
       /></a>
       <ul class="flex items-center justify-between lg:gap-8 h-[46px]">
         <!-- home section sarts here -->
@@ -103,7 +144,9 @@
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
         >
-          <a href="#feature" class="p-2">Feature</a>
+          <a href="#feature" title="Explore our features" class="p-2"
+            >Feature</a
+          >
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -112,7 +155,9 @@
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
         >
-          <a href="#join" class="p-2">Join</a>
+          <a href="#join" title="Join the ambassador program" class="p-2"
+            >Join</a
+          >
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -121,7 +166,7 @@
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
         >
-          <a href="#faq" class="p-2">FAQs</a>
+          <a href="#faq" title="Frequently asked questions" class="p-2">FAQs</a>
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -130,7 +175,12 @@
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[10px] flex flex-col justify-center items-center"
         >
-          <a href="mailto:redionesofficial@gmail.com" class="p-2">Contact Us</a>
+          <a
+            href="mailto:redionesofficial@gmail.com"
+            class="p-2"
+            title="Contact us by email"
+            >Contact Us</a
+          >
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -156,6 +206,7 @@
 
     <!-- nav at 435px screen -->
     <nav
+      aria-label="Main navigation"
       class="hidden max-xxs:w-[280px] max-sm:block fixed top-0 z-50 bg-[#090B0E]"
     >
       <!-- rediones logo -->
@@ -173,7 +224,12 @@
         <li
           class="relative js-navlink h-[48px] py-[12px] max-xxs:px-[2px] pr-[5px] flex flex-col justify-center items-center"
         >
-          <a href="#home" class="pr-2 max-xs:pr-0 py-2">Home</a>
+          <a
+            href="#home"
+            class="pr-2 max-xs:pr-0 py-2"
+            title="Rediones Homepage"
+            >Home</a
+          >
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -183,7 +239,12 @@
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[5px] max-xxs:px-[2px] flex flex-col justify-center items-center"
         >
-          <a href="#feature" class="p-2 max-xs:px-0">Feature</a>
+          <a
+            href="#feature"
+            class="p-2 max-xs:px-0"
+            title="Explore our features"
+            >Feature</a
+          >
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -192,7 +253,12 @@
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[5px] max-xxs:px-[2px] flex flex-col justify-center items-center"
         >
-          <a href="#join" class="p-2 max-xs:px-0">Join</a>
+          <a
+            href="#join"
+            class="p-2 max-xs:px-0"
+            title="Join the rediones ambassador program"
+            >Join</a
+          >
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -201,7 +267,12 @@
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[5px] max-xxs:px-[2px] flex flex-col justify-center items-center"
         >
-          <a href="#faq" class="p-2 max-xs:px-0">FAQs</a>
+          <a
+            href="#faq"
+            class="p-2 max-xs:px-0"
+            title="Frequently asked questions"
+            >FAQs</a
+          >
           <span
             class="rounded-md border-2 border-[#D94A4A] absolute mt-[42px] js-navbar w-[36px] opacity-0"
           ></span>
@@ -210,7 +281,10 @@
         <li
           class="relative js-navlink h-[48px] py-[12px] px-[5px] max-xxs:px-[2px] flex flex-col justify-center items-center"
         >
-          <a href="mailto:redionesofficial@gmail.com" class="p-2 max-xs:px-0"
+          <a
+            href="mailto:redionesofficial@gmail.com"
+            class="p-2 max-xs:px-0"
+            title="Contact us by email"
             >Contact Us</a
           >
           <span
@@ -239,16 +313,37 @@
           your mark. Together, we're shaping the future of learning and
           collaboration.
         </h3>
-        <button class="main-btn">
-          <a
-            href="https://forms.gle/46KNDZuVLNRB7xYp8"
-            aria-label="Click to join the waitlist"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Join the waitlist</a
-          >
+        <button class="main-btn" onclick="showdialog()">
+          Join the waitlist
         </button>
       </div>
+      <!-- trying out pure tailwind no px here except for text  -->
+      <dialog
+        class="p-7 z-10 bg-mainColor-0 text-white rounded-2xl"
+        id="dialog"
+      >
+        <div class="maindialog">
+          <h1 class="text-[32px] mb-8">Join the waitlist</h1>
+          <form>
+            <label for="usrname">Name:</label><br />
+            <input type="text" class="dialogbtn" id="usrname" />
+            <br />
+
+            <label for="usremail">Email:</label> <br />
+            <input type="email" id="usremail" class="dialogbtn" />
+            <br />
+
+            <button
+              onclick="joinwaitlist()"
+              type="button"
+              class="w-[502px] bg-white text-mainColor-0 text-[20px] mt-9 p-1 rounded-full"
+            >
+              Get Access
+            </button>
+          </form>
+        </div>
+        <div id="subdialog" class="hidden"></div>
+      </dialog>
 
       <!-- images for laptop and 425px screen goes here -->
       <div
@@ -709,7 +804,7 @@
             <button
               id="submit-form"
               type="button"
-              onclick="sendmail(event)"
+              onclick="sendmail()"
               class="bg-mainColor-0 py-4 px-7 w-[200px] h-[52px] text-[16px] max-xxs:text-[13px] rounded-[4px] max-xl:h-[42px] max-xl:py-[10px] max-xl:px-2"
             >
               Subcribe Now

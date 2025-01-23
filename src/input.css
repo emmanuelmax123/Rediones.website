@@ -63,4 +63,12 @@
   .imgcontat425 {
     @apply flex items-center justify-center w-full;
   }
+
+  .dialogbtn {
+    @apply mb-4 h-11 w-[502px] border-[#bfbfbf] border-2 bg-transparent rounded-xl  p-1 outline-none;
+  }
+
+  .invitebtn {
+    @apply w-[267px] h-[40px] border-[#bfbfbf] border-2 bg-transparent rounded-lg  p-1 outline-none;
+  }
 }

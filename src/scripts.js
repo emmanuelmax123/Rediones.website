@@ -60,8 +60,7 @@ faqdata.forEach(({ question, answer }) => {
              <div class="flex justify-between items-center">
                <h5 class="text-mainColor-0 max-xs:text-[14px] max-sm:w-[250px] ">
                  ${question}
-               </h5>
-              
+               </h5>             
                <svg
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 24 24"
@@ -142,8 +141,7 @@ window.addEventListener("scroll", () => {
 
 // sending email
 
-function sendmail(event) {
-  event.preventDefault;
+function sendmail() {
   const result = document.getElementById("mail-result");
   const emailInput = document.getElementById("footer-emailInput");
   const email = emailInput.value.trim();
@@ -187,4 +185,57 @@ function isValidEmail(email) {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   return emailRegex.test(email);
+}
+
+function showdialog() {
+  const dialog = document.getElementById("dialog");
+  dialog.show();
+}
+
+function joinwaitlist() {
+  const dialog = document.getElementById("dialog");
+  const maindialog = document.getElementById("maindialog");
+  const subdialog = document.getElementById("subdialog");
+  const nameInput = document.getElementById("usrname");
+  const emailInput = document.getElementById("usremail");
+
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+
+  if (isValidEmail(email)) {
+    const serviceID = "service_lyqi76j";
+    const templateID = "template_km323si";
+
+    //email.js only accepts data as an object
+    const emailData = { email: email, name: name };
+
+    emailjs.send(serviceID, templateID, emailData).then((res) => {
+      subdialog.classList.remove("hidden");
+      maindialog.classList.add("hidden");
+      subdialog.innerHTML = `
+          <h1 class="text-[32px] mb-8">You're in the waitlist</h1>
+          <p class="w-[393px] mb-9">
+            Thanks for signing up! A confirmation email has been sent to ${email}—be sure to check your inbox (or spam folder).
+          </p>
+          <div class="w-[393px]">
+            <p class="mb-2">Invite Your Friends</p>
+            <div class="flex justify-between">
+              <input type="text" class="invitebtn" />
+              <button
+                type="button"
+                class="bg-white text-black text-[16px] rounded-lg w-[94px] h-[40px]"
+              >
+                Copy link
+              </button>
+            </div>
+          </div>`;
+      nameInput.value = "";
+      emailInput.value = "";
+      setTimeout(() => {
+        dialog.close();
+      }, 5000);
+    });
+  } else {
+    console.log("something went wrong");
+  }
 }
