@@ -39,7 +39,7 @@
     @apply text-[#D94A4A] bg-white h-12 px-5 flex items-center justify-between rounded-full mb-[24px] opacity-0 bottom-0 absolute group-hover:opacity-100 font-secfont font-semibold;
   }
   .small-btn {
-    @apply text-[#D94A4A] bg-white h-[24px] px-5 flex items-center justify-center rounded-full font-secfont font-semibold text-[12px] max-xxs:hidden;
+    @apply text-[#D94A4A] bg-white h-[24px] px-[8px] flex items-center justify-center rounded-[4px] font-secfont font-semibold text-[12px] max-xxs:hidden;
   }
   .container {
     @apply p-5;
