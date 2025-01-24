@@ -19,12 +19,12 @@
       property="og:description"
       content="Join Rediones to collaborate with like-minded students and shape the future of learning."
     />
-    <meta property="og:image" content="./assets/logo.png" />
-    <meta property="og:url" content="https://rediones.example.com" />
     <meta
       name="google-site-verification"
-      content="u_1uQtoo-V7aRvE6tS2ZtbF01GfAM1AAUQ0RRNxHYpE"
+      content="IN9K5moS9nx5ky-opGqihIey6r1Y5TOOTd449X0MjVY"
     />
+    <meta property="og:image" content="./assets/logo.png" />
+    <meta property="og:url" content="https://rediones.example.com" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -209,18 +209,18 @@
     <!-- nav at 435px screen -->
     <nav
       aria-label="Main navigation"
-      class="hidden max-xxs:w-[280px] max-sm:block fixed top-0 z-50 bg-[#090B0E]"
+      class="hidden max-xxs:w-[290px] max-sm:block fixed top-0 z-50 bg-[#090B0E]"
     >
       <!-- rediones logo -->
       <div
-        class="max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] mt-[31px] items-center flex"
+        class="max-xxs:w-[290px] max-xs:w-[345px] max-sm:w-[380px] mt-[31px] items-center flex"
       >
         <a href="index.html"
           ><img src="./assets/logo.png" alt="logo" class="h-[33px]"
         /></a>
       </div>
       <ul
-        class="flex items-center justify-between h-[71px] max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px]"
+        class="flex items-center justify-between h-[71px] max-xxs:w-[290px] max-xs:w-[345px] max-sm:w-[380px]"
       >
         <!-- home section sarts here -->
         <li
@@ -298,58 +298,75 @@
 
     <!-- rediones into -->
     <section
-      class="flex items-center max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] lg:w-[900px] max-lg:w-[695px] justify-between xl:w-[1244px] max-sm:mt-[200px] mb-[50px] max-sm:mb-[550px] max-lg:mb-[220px] lg:gap-[30px] relative"
+      class="flex items-center max-xxs:w-[290px] max-xs:w-[345px] max-sm:w-[380px] lg:w-[900px] max-lg:w-[695px] justify-between xl:w-[1244px] max-sm:mt-[200px] mb-[50px] max-sm:mb-[550px] max-lg:mb-[220px] lg:gap-[30px] relative"
       id="home"
     >
       <!-- main text -->
       <div
-        class="max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] md:w-[585px] xl:w-[650px] flex flex-col gap-[33.5px]"
+        class="max-xxs:w-[290px] max-xs:w-[345px] max-sm:w-[380px] md:w-[585px] xl:w-[650px] flex flex-col gap-[33.5px]"
       >
         <h1 class="mainfont max-xxs:text-[38px] max-xs:text-[48px]">
           We're Redefining the Student Experience
         </h1>
         <h3
-          class="max-xxs:text-[16px] max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[490px]"
+          class="max-xxs:text-[16px] max-xxs:w-[290px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[490px]"
         >
           Connect with like-minded students, explore new opportunities, and make
           your mark. Together, we're shaping the future of learning and
           collaboration.
         </h3>
-        <button class="main-btn" onclick="showdialog()">
+        <button class="main-btn" onclick="joinwaitlist()">
           Join the waitlist
         </button>
       </div>
-      <!-- trying out pure tailwind no px here except for text  -->
+
       <dialog
-        class="p-7 z-10 bg-mainColor-0 text-white rounded-2xl"
-        id="dialog"
+        class="z-10 w-[290px] xxs:w-[340px] sm:w-[540px] bg-mainColor-0 text-white rounded-2xl shadow-lg"
+        id="modal"
       >
-        <div class="maindialog">
-          <h1 class="text-[32px] mb-8">Join the waitlist</h1>
+        <div id="mainmodal" class="m-7">
+          <!-- close icon -->
+          <div class="w-full flex justify-end cursor-pointer">
+            <svg
+              onclick="document.getElementById('modal').close()"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="currentColor"
+            >
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+              ></path>
+            </svg>
+          </div>
+
+          <h1 class="max-sm:text-[20px] text-[32px] mb-4">Join the waitlist</h1>
           <form>
             <label for="usrname">Name:</label><br />
-            <input type="text" class="dialogbtn" id="usrname" />
+            <input type="text" class="modalbtn" id="usrname" />
             <br />
 
             <label for="usremail">Email:</label> <br />
-            <input type="email" id="usremail" class="dialogbtn" />
+            <input type="email" id="usremail" class="modalbtn" />
             <br />
 
             <button
               onclick="joinwaitlist()"
               type="button"
-              class="w-[502px] bg-white text-mainColor-0 text-[20px] mt-9 p-1 rounded-full"
+              class="w-full bg-white text-mainColor-0 max-md:text-[18px] text-[20px] mt-4 p-1 rounded-full"
             >
               Get Access
             </button>
           </form>
         </div>
-        <div id="subdialog" class="hidden"></div>
+
+        <div id="submodal" class="m-[18px]"></div>
       </dialog>
 
       <!-- images for laptop and 425px screen goes here -->
       <div
-        class="flex justify-between gap-[30px] max-xxs:gap-[10px] border-white w-fit max-xxs:w-[280px] max-sm:flex max-lg:hidden max-sm:absolute max-xxs:translate-x-0 max-xs:translate-x-[12px] max-sm:translate-x-[60px] max-xxs:translate-y-[500px] max-sm:translate-y-[550px]"
+        class="flex justify-between gap-[30px] max-xxs:gap-[10px] border-white w-fit max-xxs:w-[290px] max-sm:flex max-lg:hidden max-sm:absolute max-xxs:translate-x-0 max-xs:translate-x-[12px] max-sm:translate-x-[60px] max-xxs:translate-y-[500px] max-sm:translate-y-[550px]"
       >
         <!-- col 1 -->
         <div class="pt-[140px] hidden xl:block">
@@ -443,11 +460,11 @@
     <!-- feature section starts here -->
     <section class="navdivadjuster" id="feature">
       <div
-        class="flex flex-col items-center max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] lg:w-[900px] xl:w-[1244px] max-sm:text-center"
+        class="flex flex-col items-center max-xxs:w-[290px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] lg:w-[900px] xl:w-[1244px] max-sm:text-center"
       >
         <h1 class="h1mini mb-5">Explore Some Of Our Features</h1>
         <h3
-          class="max-xxs:text-[14px] max-xs:text-[17px] max-xxs:w-[280px] max-xs:w-[320px]"
+          class="max-xxs:text-[14px] max-xs:text-[17px] max-xxs:w-[290px] max-xs:w-[320px]"
         >
           We offer a variety of features that cater to the needs and interests
           of scholars
@@ -713,7 +730,7 @@
     <!-- become an ambassador starts here -->
     <section class="navdivadjuster" id="join">
       <div
-        class="flex flex-col bg-cover bg-center h-[250px] p-[20px] max-sm:pl-[10px] max-sm:py-0 max-sm:pr-0 xl:h-[399px] lg:p-[46px] rounded-[20.16px] lg:h-[350px] max-lg:h-[350px] max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] lg:w-[900px] xl:w-[1244px]"
+        class="flex flex-col bg-cover bg-center h-[250px] p-[20px] max-sm:pl-[10px] max-sm:py-0 max-sm:pr-0 xl:h-[399px] lg:p-[46px] rounded-[20.16px] lg:h-[350px] max-lg:h-[350px] max-xxs:w-[290px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] lg:w-[900px] xl:w-[1244px]"
         style="
           background-image: linear-gradient(
               115deg,
@@ -726,7 +743,7 @@
         "
       >
         <h1
-          class="w-[322px] max-xxs:w-[280px] text-[33px] max-xxs:text-[22px] max-xs:text-[27px] max-sm:text-[29px] lg:mb-[18px] xl:mb-[25px] max-sm:mt-[76px] max-sm:mb-[17px]"
+          class="w-[322px] max-xxs:w-[290px] text-[33px] max-xxs:text-[22px] max-xs:text-[27px] max-sm:text-[29px] lg:mb-[18px] xl:mb-[25px] max-sm:mt-[76px] max-sm:mb-[17px]"
         >
           Become a Rediones Ambassador
         </h1>
@@ -758,7 +775,7 @@
 
     <!-- FAQ Starts here -->
     <section
-      class="navdivadjuster max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] max-xl:w-[900px] xl:w-[1244px]"
+      class="navdivadjuster max-xxs:w-[290px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] max-xl:w-[900px] xl:w-[1244px]"
       id="faq"
     >
       <div class="flex flex-col items-center justify-center">
@@ -781,7 +798,7 @@
     >
       <!-- newsletter section -->
       <div
-        class="flex justify-between max-sm:flex-col items-center bg-[#1f1f1f] z-10 px-[103px] max-sm:py-[15px] py-[60px] w-[1231px] -mt-24 max-sm:rounded-[9px] rounded-[24px] max-xxs:w-[280px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] max-xl:w-[900px] max-xl:py-[48px] max-lg:px-[44px] max-xl:px-[72px]"
+        class="flex justify-between max-sm:flex-col items-center bg-[#1f1f1f] z-10 px-[103px] max-sm:py-[15px] py-[60px] w-[1231px] -mt-24 max-sm:rounded-[9px] rounded-[24px] max-xxs:w-[290px] max-xs:w-[345px] max-sm:w-[380px] max-lg:w-[695px] max-xl:w-[900px] max-xl:py-[48px] max-lg:px-[44px] max-xl:px-[72px]"
         style="box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25)"
       >
         <div class="max-xxs:w-[246px] max-sm:w-[323px] font-mainfont">
@@ -818,7 +835,7 @@
 
       <!-- main footer section -->
       <div
-        class="border-[#e5e5e5] border-t-2 flex justify-between items-center pt-8 mt-20 w-full max-xxs:w-[280px]"
+        class="border-[#e5e5e5] border-t-2 flex justify-between items-center pt-8 mt-20 w-full max-xxs:w-[290px]"
       >
         <div class="flex max-sm:w-[150px]">
           <h4>© 2025 Rediones. All rights reserved</h4>

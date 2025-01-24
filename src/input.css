@@ -33,7 +33,7 @@
     @apply group-hover:scale-105 transition duration-500;
   }
   .h1mini {
-    @apply font-subfont max-xxs:w-[280px] max-xxs:text-[28px] max-xs:text-[35px] max-lg:mb-[24px]  max-lg:text-[41px];
+    @apply font-subfont max-xxs:w-[290px] max-xxs:text-[28px] max-xs:text-[35px] max-lg:mb-[24px]  max-lg:text-[41px];
   }
   .sec-btn {
     @apply text-[#D94A4A] bg-white h-12 px-5 flex items-center justify-between rounded-full mb-[24px] opacity-0 bottom-0 absolute group-hover:opacity-100 font-secfont font-semibold;
@@ -48,7 +48,7 @@
     @apply p-5  border-[#414141] border-b-2;
   }
   .navdivadjuster {
-    @apply pt-[90px] max-sm:pt-[30px] mb-[100px];
+    @apply pt-[90px] max-sm:pt-[30px] mb-[50px];
   }
   .h21024 {
     @apply max-xl:text-[22px] text-[26px] max-lg:text-[18px];
@@ -57,18 +57,18 @@
     @apply text-[16px] max-lg:text-[12px];
   }
   .featuresat425 {
-    @apply w-[380px] max-xxs:w-[280px] max-xs:w-[345px] h-[233px] flex p-[20px] max-xxs:h-32 overflow-hidden rounded-[11px];
+    @apply w-[380px] max-xxs:w-[290px] max-xs:w-[345px] h-[233px] flex p-[20px] max-xxs:h-32 overflow-hidden rounded-[11px];
   }
 
   .imgcontat425 {
     @apply flex items-center justify-center w-full;
   }
 
-  .dialogbtn {
-    @apply mb-4 h-11 w-[502px] border-[#bfbfbf] border-2 bg-transparent rounded-xl  p-1 outline-none;
+  .modalbtn {
+    @apply mb-4 w-full min-h-[24px] border-[#bfbfbf] border-2 bg-transparent rounded-xl  p-1 outline-none;
   }
 
   .invitebtn {
-    @apply w-[267px] h-[40px] border-[#bfbfbf] border-2 bg-transparent rounded-lg  p-1 outline-none;
+    @apply w-[158px] xxs:w-[210px] h-[40px] border-white border-2 bg-transparent rounded-lg  p-1 outline-none;
   }
 }
