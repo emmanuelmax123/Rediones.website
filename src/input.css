@@ -33,7 +33,7 @@
     @apply group-hover:scale-105 transition duration-500;
   }
   .h1mini {
-    @apply font-subfont max-xxs:w-[290px] max-xxs:text-[28px] max-xs:text-[35px] max-lg:mb-[24px]  max-lg:text-[41px];
+    @apply font-subfont max-xxs:w-[290px] max-xxs:text-[28px] max-xs:text-[35px] max-lg:mb-[24px]  max-lg:text-[41px] max-xl:text-[46px];
   }
   .sec-btn {
     @apply text-[#D94A4A] bg-white h-12 px-5 flex items-center justify-between rounded-full mb-[24px] opacity-0 bottom-0 absolute group-hover:opacity-100 font-secfont font-semibold;
